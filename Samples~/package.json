@@ -1,0 +1,10 @@
+{
+  "samples": [
+      {
+          "displayName": "Rule Tile",
+          "description": "lot of rule tile. (maybe...)",
+          "path": "Samples~/RuleTile"
+      }
+
+  ]
+}
