@@ -20,6 +20,11 @@
         "displayName": "Rule Tile",
         "description": "lot of rule tile. (maybe...)",
         "path": "Samples~/RuleTile"
+    },
+    {
+      "displayName": "Dream Tale",
+      "description": "Art Pack for Dream Tale project.",
+      "path": "Samples~/DreamTale"
     }
   ]
   
