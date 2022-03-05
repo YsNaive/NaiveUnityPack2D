@@ -13,7 +13,15 @@
   "author": {
     "name": "YsNaive",
     "email": "yi.shi.4589@gmail.com"
-  }
+  },
+  
+  "samples": [
+    {
+        "displayName": "Rule Tile",
+        "description": "lot of rule tile. (maybe...)",
+        "path": "Samples~/RuleTile"
+    }
+  ]
   
 }
   
