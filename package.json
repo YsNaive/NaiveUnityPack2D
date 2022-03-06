@@ -17,24 +17,19 @@
   
   "samples": [
     {
-        "displayName": "Rule Tile",
+        "displayName": "Tilemap Resource",
         "description": "lot of rule tile.",
-        "path": "Samples~/TilemapResource/RuleTile"
+        "path": "Samples~/Tilemap"
     },
     {
-        "displayName": "Dream Story Animate",
-        "description": "Animate for Dream Story project.",
-        "path": "Samples~/AnimateResource/DreamStory_Animate"
-    }
+        "displayName": "Dream Story",
+        "description": "Art for Dream Story project.",
+        "path": "Samples~/DreamStory"
+    },
     {
-        "displayName": "Dream Story Image",
-        "description": "GUI & Image for Dream Story project.",
-        "path": "Samples~/ImageResource/DreamStory_Image"
-    }
-    {
-        "displayName": "Magic Factory Image",
-        "description": "GUI & Image for Magic Factory project.",
-        "path": "Samples~/ImageResource/MagicFactory_Image"
+        "displayName": "Magic Factory",
+        "description": "Art for Magic Factory project.",
+        "path": "Samples~/MagicFactory"
     }
   ]
   
