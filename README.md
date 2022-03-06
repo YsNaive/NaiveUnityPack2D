@@ -7,7 +7,7 @@
 > chineseWall_1  
 
 ## **Dream Tale**
-> - **【Little Red】  
+> - **【Little Red】**  
 > match  
 > matchBox  
 > lamp  
