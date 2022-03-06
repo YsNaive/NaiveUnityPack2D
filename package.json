@@ -18,13 +18,23 @@
   "samples": [
     {
         "displayName": "Rule Tile",
-        "description": "lot of rule tile. (maybe...)",
-        "path": "Samples~/RuleTile"
+        "description": "lot of rule tile.",
+        "path": "Samples~/¡iTilemapResource¡j/RuleTile"
     },
     {
-      "displayName": "Dream Tale",
-      "description": "Art Pack for Dream Tale project.",
-      "path": "Samples~/DreamTale"
+        "displayName": "Dream Story Animate",
+        "description": "Animate for Dream Story project.",
+        "path": "Samples~/¡iAnimateResource¡j/DreamStory_Animate"
+    }
+    {
+        "displayName": "Dream Story Image",
+        "description": "GUI & Image for Dream Story project.",
+        "path": "Samples~/¡iImageResource¡j/DreamStory_Image"
+    }
+    {
+        "displayName": "Magic Factory Image",
+        "description": "GUI & Image for Magic Factory project.",
+        "path": "Samples~/¡iImageResource¡j/MagicFactory_Image"
     }
   ]
   
