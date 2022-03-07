@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*--------------------- Made by YsNaive -------------------*/
+
+
 /// <summary>
 /// ©I¥s§Ö±¶¨ç¼Æ
 /// </summary>
