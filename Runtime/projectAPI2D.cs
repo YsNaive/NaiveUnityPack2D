@@ -5,6 +5,12 @@ using UnityEngine;
 
 namespace UnityEngine
 {
+    public abstract class projectAPI2D<T> : projectAPI2D
+    {
+        public override abstract void localAwake();
+        
+    }
+
     /// <summary>
     /// ©I¥s§Ö±¶¨ç¼Æ
     /// </summary>
