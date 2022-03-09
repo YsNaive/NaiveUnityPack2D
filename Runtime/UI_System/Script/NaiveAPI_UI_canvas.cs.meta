@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 63faef0daf952f24e8cf8b33783ebee9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - pageButton: {fileID: 3614381256671979155, guid: 5efbcb59009db364a8bdc1138c4b8398, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

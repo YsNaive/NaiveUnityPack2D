@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8d1ffdae4530a5243925ff0a1dae9435
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - cavanButton: {fileID: 3614381256671979155, guid: 5efbcb59009db364a8bdc1138c4b8398, type: 3}
+  - customButton: {fileID: 6020246586403127344, guid: 563a343c22bfb844b8edfea701b108bd, type: 3}
+  - image: {fileID: 575051597458154758, guid: ca9712108884cb447be772d77a033ace, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
