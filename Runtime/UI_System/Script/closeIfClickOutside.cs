@@ -4,35 +4,35 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 
-    public class closeIfClickOutside : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class closeIfClickOutside : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+{
+    bool isPointerInside;
+    public NaiveAPI_UI_System UI_System;
+    public void OnPointerEnter(PointerEventData eventData)
     {
-        bool isPointerInside;
-        public NaiveAPI_UI_System UI_System;
-        public void OnPointerEnter(PointerEventData eventData)
-        {
-            isPointerInside = true;
-        }
+        isPointerInside = true;
+    }
 
-        public void OnPointerExit(PointerEventData eventData)
-        {
-            isPointerInside = false;
-        }
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        isPointerInside = false;
+    }
 
-        // Start is called before the first frame update
-        void Start()
-        {
-            UI_System = GameObject.Find("EventSystem").GetComponent<NaiveAPI_UI_System>();
-        }
+    // Start is called before the first frame update
+    void Start()
+    {
+        UI_System = GameObject.Find("EventSystem").GetComponent<NaiveAPI_UI_System>();
+    }
 
-        // Update is called once per frame
-        void Update()
+    // Update is called once per frame
+    void Update()
+    {
+        //判斷是否點選UI
+        if (Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began))
         {
-            //判斷是否點選UI
-            if (Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began))
-            {
-                UI_System.setActive(gameObject.name, isPointerInside);
-                UI_System.displayReflush();
-            }
+            UI_System.setActive(gameObject.name, isPointerInside);
+            UI_System.displayReflush();
         }
     }
+}
 
