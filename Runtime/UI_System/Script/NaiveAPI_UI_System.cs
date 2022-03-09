@@ -77,7 +77,7 @@ public class NaiveAPI_UI_System : projectAPI2D
     public void addCanvas(GameObject canvas)
     {
         GameObject i = Instantiate(canvas, transform);
-        if (isCloseClickOutside) i.AddComponent<NaiveAPI.closeIfClickOutside>();
+        if (isCloseClickOutside) i.AddComponent<closeIfClickOutside>();
         i.name = canvasName;
         canvasName = null;
     }

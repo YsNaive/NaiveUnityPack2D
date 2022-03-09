@@ -48,12 +48,12 @@ public class NaiveAPI_UI_canvas : projectAPI2D
     { 
         GameObject i = Instantiate(InsObject, transform);
         i.name = objectName;
-        if (isCloseClickOutside) i.AddComponent<NaiveAPI.closeIfClickOutside>();
+        if (isCloseClickOutside) i.AddComponent<closeIfClickOutside>();
         switch (buttonType)
         {
             case buttonType.canvasButton:
                 i.GetComponent<NaiveAPI_button>().ButtonType = buttonType.ToString();
-                NaiveAPI.canvasButton cb = i.GetComponent<NaiveAPI.canvasButton>();
+                canvasButton cb = i.GetComponent<canvasButton>();
                 cb.isCloseSelfCanvas = isCloseSelfCanvas;
                 if (isOpenOtherObject) cb.openObject = targetObject.name; else cb.openObject = null;
                 break;

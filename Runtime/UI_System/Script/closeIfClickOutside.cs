@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace NaiveAPI
-{
+
     public class closeIfClickOutside : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         bool isPointerInside;
@@ -36,5 +35,4 @@ namespace NaiveAPI
             }
         }
     }
-}
 
