@@ -26,16 +26,16 @@ public class NaiveAPI_UI_canvas_Editor : Editor
 		serializedObject.Update();
 
 		GUILayout.Space(10);
-		EditorGUILayout.PropertyField(buttonType, new GUIContent("Button Type"));
+		EditorGUILayout.PropertyField(buttonType, new GUIContent("Object Type"));
 
 
 		switch (buttonType.enumNames[buttonType.enumValueIndex])
         {
 			case "canvasButton":
-				NaiveAPI_UI_canvas.objectName = EditorGUILayout.TextField("Button Name", NaiveAPI_UI_canvas.objectName);
+				NaiveAPI_UI_canvas.objectName = EditorGUILayout.TextField("Object Name", NaiveAPI_UI_canvas.objectName);
 				NaiveAPI_UI_canvas.isOpenOtherObject = EditorGUILayout.Toggle("Open other Object", NaiveAPI_UI_canvas.isOpenOtherObject);
-				if(NaiveAPI_UI_canvas.isOpenOtherObject) NaiveAPI_UI_canvas.targetObject = (GameObject)EditorGUILayout.ObjectField( "    TargetCanvas", NaiveAPI_UI_canvas.targetObject, typeof(GameObject),true);
-				NaiveAPI_UI_canvas.isCloseSelfCanvas = EditorGUILayout.Toggle("CloseSelf", NaiveAPI_UI_canvas.isCloseSelfCanvas);
+				if(NaiveAPI_UI_canvas.isOpenOtherObject) NaiveAPI_UI_canvas.targetObject = (GameObject)EditorGUILayout.ObjectField( "    TargetObject", NaiveAPI_UI_canvas.targetObject, typeof(GameObject),true);
+				NaiveAPI_UI_canvas.isCloseSelfCanvas = EditorGUILayout.Toggle("Close self Canvas", NaiveAPI_UI_canvas.isCloseSelfCanvas);
 				break;
 			case "customButton":
 				NaiveAPI_UI_canvas.objectName = EditorGUILayout.TextField("Image Name", NaiveAPI_UI_canvas.objectName);
@@ -57,7 +57,7 @@ public class NaiveAPI_UI_canvas_Editor : Editor
 		serializedObject.ApplyModifiedProperties();
 
 		// «ö¶s
-		if (GUILayout.Button("Generate Button"))
+		if (GUILayout.Button("Generate Object"))
 		{
 			switch (buttonType.enumNames[buttonType.enumValueIndex])
 			{

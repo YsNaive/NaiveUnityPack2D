@@ -37,6 +37,7 @@ public class NaiveAPI_UI_System : projectAPI2D
             UIS[i].thisUI.SetActive(UIS[i].isActive);
         }
     }
+
     public void clearAll()
     {
         for (int i = 0; i < UIS.Count; i++)

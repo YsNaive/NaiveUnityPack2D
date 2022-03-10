@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 2503612971337118429}
   - component: {fileID: 2503612971337118428}
   m_Layer: 5
-  m_Name: NaiveAPI_UI_canvas
+  m_Name: NaiveAPI_UI_normalCanvas
   m_TagString: Untagged
-  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -55,6 +55,7 @@ MonoBehaviour:
   thisUI_type: normalCanvas
   isActive: 1
   ignoreClear: 0
+  closeIfMouseClickOutside: 0
 --- !u!114 &2503612971337118424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,10 +71,12 @@ MonoBehaviour:
   animator: {fileID: 0}
   spriteRenderer: {fileID: 0}
   buttonType: 0
-  buttonName: 
-  targetCanvas: {fileID: 0}
-  isCloseSelf: 0
-  isOpenOtherCanvas: 0
+  objectName: 
+  isCloseClickOutside: 0
+  targetObject: {fileID: 0}
+  isCloseSelfCanvas: 0
+  isOpenOtherObject: 0
+  image: {fileID: 0}
 --- !u!223 &2503612971337118430
 Canvas:
   m_ObjectHideFlags: 0

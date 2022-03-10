@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
+namespace NaiveAPI
+{
     public class canvasButton : NaiveAPI_button
     {  
         public override void localAwake()
@@ -30,4 +31,6 @@ using UnityEngine;
 
 
     }
+}
+
 
