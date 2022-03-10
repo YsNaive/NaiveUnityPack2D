@@ -81,6 +81,7 @@ public class NaiveAPI_UI_System : projectAPI2D
         if (isCloseClickOutside) i.AddComponent<closeIfClickOutside>();
         i.name = canvasName;
         canvasName = null;
+        isCloseClickOutside = false;
     }
 
     public void setActive(string targetName,bool isActive)
