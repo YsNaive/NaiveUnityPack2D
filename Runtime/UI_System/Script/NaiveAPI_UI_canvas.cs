@@ -7,7 +7,6 @@ public enum buttonType
 {
     canvasButton,
     customButton,
-    gridSlot,
     image
 }
 
@@ -58,8 +57,6 @@ public class NaiveAPI_UI_canvas : projectAPI2D
                 if (isOpenOtherObject) cb.openObject = targetObject.name; else cb.openObject = null;
                 break;
             case buttonType.customButton:
-                break;
-            case buttonType.gridSlot:
                 break;
             case buttonType.image:
                 i.GetComponent<Image>().sprite = image;

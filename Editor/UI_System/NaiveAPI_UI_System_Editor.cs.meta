@@ -5,6 +5,7 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - normalCanvas: {fileID: 2503612971337118419, guid: 85187396983ee77408d740358f755c85, type: 3}
+  - gridSlotCanvas: {fileID: 3285665178838267969, guid: b2c0c29e0a9163b43a3c95c48ebece7b, type: 3}
   - NaiveAPI_UI_System: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}

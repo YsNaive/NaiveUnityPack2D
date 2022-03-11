@@ -53,7 +53,6 @@ public class NaiveAPI_item_itemType_Editor : Editor
 
         return base.RenderStaticPreview(assetPath, subAssets, width, height);
     }
-
     protected void OnClickBrowseForNewIcon()
     {
 
@@ -68,6 +67,8 @@ public class NaiveAPI_item_itemType_Editor : Editor
 
         }
     }
+
+
     public static class AssetDatabaseUtility
     {
 

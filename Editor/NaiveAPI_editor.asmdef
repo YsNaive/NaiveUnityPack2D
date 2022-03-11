@@ -1,8 +1,12 @@
 {
-    "name": "NaiveAPI.runtime",
+    "name": "NaiveAPI_editor",
     "rootNamespace": "",
-    "references": [],
-    "includePlatforms": [],
+    "references": [
+        "GUID:3dcd2bf5d93991f4fa29a4d3cf1f5cd7"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

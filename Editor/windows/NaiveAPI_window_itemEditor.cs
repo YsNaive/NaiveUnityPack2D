@@ -16,7 +16,7 @@ public class NaiveAPI_window_itemEditor : EditorWindow
     private int x = 0, y = 0, scale = 0;
     // itemType
     [HideInInspector]
-    private Texture2D icon;
+    private Texture2D icon,iconFromPrefab;
     [HideInInspector]
     private string itemName,displayName;
     [HideInInspector]
@@ -60,22 +60,24 @@ public class NaiveAPI_window_itemEditor : EditorWindow
             displayName = EditorGUILayout.TextField("Display Name", displayName);
             prefab = (GameObject)EditorGUILayout.ObjectField("GameObject (prefab)", prefab, typeof(GameObject), false);
 
-            EditorGUILayout.BeginHorizontal();
-            icon = (Texture2D)EditorGUILayout.ObjectField("Item icon ", icon, typeof(Texture2D), false);
-            if (GUILayout.Button("Load form\nPrefab"))
-            {
-                isLoadIconFromPrefab = ! isLoadIconFromPrefab;
-                x = 0;
-                y = 0;
-                scale = 0;
-            }
-            if (isLoadIconFromPrefab)
-            {
-                EditorGUILayout.EndHorizontal();
-                x = EditorGUILayout.IntField("x",x);
-                y = EditorGUILayout.IntField("y", y);
-                scale = EditorGUILayout.IntField("scale", scale);
+            
 
+            if(!isLoadIconFromPrefab)
+            {
+                EditorGUILayout.BeginHorizontal();
+                icon = (Texture2D)EditorGUILayout.ObjectField("Item icon ", icon, typeof(Texture2D), false);
+                if (GUILayout.Button("Load form\nPrefab"))
+                {
+                    isLoadIconFromPrefab = ! isLoadIconFromPrefab;
+                    x = 0;
+                    y = 0;
+                    scale = 0;
+                }
+                EditorGUILayout.EndHorizontal();
+            }
+            else
+            {
+                EditorGUILayout.BeginHorizontal();
                 // ¹LÂo¹H³W¿é¤J
                 Sprite tempSprite = prefab.GetComponent<SpriteRenderer>().sprite;
                 if (x == 0 || x < 0) x = 0;
@@ -85,40 +87,52 @@ public class NaiveAPI_window_itemEditor : EditorWindow
                 if (x > tempSprite.textureRect.width) x = (int)tempSprite.textureRect.width;
                 if (y > tempSprite.textureRect.height) y = (int)tempSprite.textureRect.height;
                 if (scale > minWH) scale = minWH;
-
-                try { icon = Sprite2Texture(tempSprite, x, y, scale); } catch { Debug.Log("There is no Prefab or Texture is not Readable !"); }
+                iconFromPrefab = (Texture2D)EditorGUILayout.ObjectField("icon preview", iconFromPrefab, typeof(Texture2D), false);
+                try { iconFromPrefab = Sprite2Texture(tempSprite, x, y, scale); } catch { Debug.Log("There is no Prefab or Texture is not Readable !"); }
+                
+                if (GUILayout.Button("Cancel"))
+                {
+                    isLoadIconFromPrefab = false;
+                }
+                EditorGUILayout.EndHorizontal();
+                x = EditorGUILayout.IntField("x",x);
+                y = EditorGUILayout.IntField("y", y);
+                scale = EditorGUILayout.IntField("scale", scale);
                 iconFolder = (DefaultAsset)EditorGUILayout.ObjectField("Save locate", iconFolder, typeof(DefaultAsset), false);
+                
                 if (GUILayout.Button("Save and load icon"))
                 {
                     string path = AssetDatabase.GetAssetPath(iconFolder) + "/" + itemName + "_icon.asset";
-                    AssetDatabase.CreateAsset(icon,path);
+                    AssetDatabase.CreateAsset(iconFromPrefab,path);
                     icon = (Texture2D)AssetDatabase.LoadAssetAtPath(path, typeof(Texture2D));
                     isLoadIconFromPrefab = false;
                 }
-                EditorGUILayout.BeginHorizontal();
             }
-            EditorGUILayout.EndHorizontal();
 
             EditorGUILayout.Space(20);
-            if (GUILayout.Button("Generate Item"))
+            if(!isLoadIconFromPrefab)
             {
+                if (GUILayout.Button("Generate Item"))
+                {
+                    NaiveAPI_item_itemType item = CreateInstance<NaiveAPI_item_itemType>();
 
-                NaiveAPI_item_itemType item = CreateInstance<NaiveAPI_item_itemType>();
-                
-                AssetDatabase.CreateAsset(item, targetFolderPath + itemName + ".asset");
-                AssetDatabase.SaveAssets();
-                serializedObject = new SerializedObject(item);
-                serializedObject.FindProperty("itemName").stringValue = itemName;
-                serializedObject.FindProperty("displayName").stringValue = displayName;
-                serializedObject.FindProperty("prefab").objectReferenceValue = prefab;
-                serializedObject.FindProperty("icon").objectReferenceValue = icon;
-                serializedObject.ApplyModifiedProperties();
+                    AssetDatabase.CreateAsset(item, targetFolderPath + itemName + ".asset");
+                    AssetDatabase.SaveAssets();
+                    serializedObject = new SerializedObject(item);
+                    serializedObject.FindProperty("itemName").stringValue = itemName;
+                    serializedObject.FindProperty("displayName").stringValue = displayName;
+                    serializedObject.FindProperty("prefab").objectReferenceValue = prefab;
+                    serializedObject.FindProperty("icon").objectReferenceValue = icon;
+                    serializedObject.ApplyModifiedProperties();
 
-                itemName = null;
-                displayName = null;
-                prefab = null;
-                icon = null;
+                    itemName = null;
+                    displayName = null;
+                    prefab = null;
+                    icon = null;
+                    
+                }
             }
+
         }
         else
         {

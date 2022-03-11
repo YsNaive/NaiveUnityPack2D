@@ -40,8 +40,6 @@ public class NaiveAPI_UI_canvas_Editor : Editor
 			case "customButton":
 				NaiveAPI_UI_canvas.objectName = EditorGUILayout.TextField("Image Name", NaiveAPI_UI_canvas.objectName);
 				break;
-			case "gridSlot":
-				break;
 			case "image":
 				NaiveAPI_UI_canvas.objectName = EditorGUILayout.TextField("Image Name", NaiveAPI_UI_canvas.objectName);
 				NaiveAPI_UI_canvas.image = (Sprite)EditorGUILayout.ObjectField("Image", NaiveAPI_UI_canvas.image, typeof(Sprite), true);
@@ -66,8 +64,6 @@ public class NaiveAPI_UI_canvas_Editor : Editor
 					break;
 				case "customButton":
 					NaiveAPI_UI_canvas.addObject(customButton);
-					break;
-				case "gridSlot":
 					break;
 				case "image":
 					NaiveAPI_UI_canvas.addObject(image);
