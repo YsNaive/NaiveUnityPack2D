@@ -15,17 +15,15 @@ public class NaiveAPI_UI_gridSlotCanvas_Editor : Editor
 	}
 	public override void OnInspectorGUI()
 	{
-		EditorGUILayout.BeginHorizontal();
 		if(!gridSlotCanvas.isGenerateByItemList && !gridSlotCanvas.isShowByInventory)
         {
-			gridSlotCanvas.isShowByInventory = EditorGUILayout.Toggle("Display by itemList", gridSlotCanvas.isShowByInventory);
+			gridSlotCanvas.isShowByInventory = EditorGUILayout.Toggle("Display by inventory", gridSlotCanvas.isShowByInventory);
 			gridSlotCanvas.isGenerateByItemList = EditorGUILayout.Toggle("Display by itemList", gridSlotCanvas.isGenerateByItemList);
 		}
 		else if(gridSlotCanvas.isGenerateByItemList)
 			gridSlotCanvas.isGenerateByItemList = EditorGUILayout.Toggle("Display by itemList", gridSlotCanvas.isGenerateByItemList);
 		else
-			gridSlotCanvas.isShowByInventory = EditorGUILayout.Toggle("Display by itemList", gridSlotCanvas.isShowByInventory);
-
+			gridSlotCanvas.isShowByInventory = EditorGUILayout.Toggle("Display by inventory", gridSlotCanvas.isShowByInventory);
 
 		if (gridSlotCanvas.isShowByInventory)
 		{
@@ -45,7 +43,7 @@ public class NaiveAPI_UI_gridSlotCanvas_Editor : Editor
 		else if (gridSlotCanvas.isGenerateByItemList)
         {
 			gridSlotCanvas.backGround = (Sprite)EditorGUILayout.ObjectField("BackGround", gridSlotCanvas.backGround, typeof(Sprite), false);
-			gridSlotCanvas.displayItemList = (NaiveAPI_item_itemList)EditorGUILayout.ObjectField("Inventory", gridSlotCanvas.displayItemList, typeof(NaiveAPI_item_itemList), false);
+			gridSlotCanvas.displayItemList = (NaiveAPI_item_itemList)EditorGUILayout.ObjectField("Item List", gridSlotCanvas.displayItemList, typeof(NaiveAPI_item_itemList), false);
 			if (!gridSlotCanvas.isGenerateByIcon)
 			{
 				if (GUILayout.Button("Generate By Prefab")) gridSlotCanvas.isGenerateByIcon = true;
