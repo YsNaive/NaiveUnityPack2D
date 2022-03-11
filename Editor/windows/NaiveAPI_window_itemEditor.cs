@@ -86,7 +86,7 @@ public class NaiveAPI_window_itemEditor : EditorWindow
                 if (y == 0 || y < 0) y = 0;
                 int minWH = (int)(tempSprite.textureRect.width > tempSprite.textureRect.height ? tempSprite.textureRect.width : tempSprite.textureRect.height);
                 if (scale == 0 || scale < 0) scale = 0;
-                if (x > tempSprite.textureRect.width) x = (int)tempSprite.textureRect.width;
+                if (x > tempSprite.textureRect.width*2) x = (int)tempSprite.textureRect.width*2;
                 if (y > tempSprite.textureRect.height) y = (int)tempSprite.textureRect.height;
                 if (scale > minWH) scale = minWH;
                 iconFromPrefab = (Texture2D)EditorGUILayout.ObjectField("icon preview", iconFromPrefab, typeof(Texture2D), false);
