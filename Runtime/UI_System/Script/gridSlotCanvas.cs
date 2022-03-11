@@ -25,10 +25,14 @@ public class gridSlotCanvas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (displayInventory.isUIupdate)
+        if (isShowByInventory)
         {
-            reflushByInventory();
+            if (displayInventory.isUIupdate)
+            {
+                reflushByInventory();
+            }
         }
+
     }
 
     public void addSlot(string name,Sprite icon,Sprite backGround ,float x ,float y ,bool showNull)
