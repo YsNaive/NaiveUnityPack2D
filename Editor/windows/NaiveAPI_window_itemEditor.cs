@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
+using UnityEditor.SceneManagement;
 using UnityEngine;
 
 public class NaiveAPI_window_itemEditor : EditorWindow
@@ -9,13 +10,16 @@ public class NaiveAPI_window_itemEditor : EditorWindow
     private DefaultAsset targetFolder = null,iconFolder=null;
     private string targetFolderPath;
     private bool isEditItem = false,isLoadIconFromPrefab = false;
+    private SerializedObject serializedObject;
     private NaiveAPI_item_itemType targetItem;
     // for image setting
     private int x = 0, y = 0, scale = 0;
     // itemType
+    [HideInInspector]
     private Texture2D icon;
-    private string itemName;
-    private string displayName;
+    [HideInInspector]
+    private string itemName,displayName;
+    [HideInInspector]
     private GameObject prefab;
 
     [MenuItem("Window/NaiveAPI/Item Editor")]
@@ -43,9 +47,6 @@ public class NaiveAPI_window_itemEditor : EditorWindow
                 isEditItem = false;
             }
         }
-            
-
-
 
 
         if ( ! isEditItem)
@@ -101,14 +102,17 @@ public class NaiveAPI_window_itemEditor : EditorWindow
             EditorGUILayout.Space(20);
             if (GUILayout.Button("Generate Item"))
             {
-                NaiveAPI_item_itemType item = CreateInstance<NaiveAPI_item_itemType>();
-                AssetDatabase.CreateAsset(item, targetFolderPath + itemName + ".asset");
-                item.itemName = itemName;
-                item.displayName = displayName;
-                item.prefab = prefab;
-                item.icon = icon;
 
+                NaiveAPI_item_itemType item = CreateInstance<NaiveAPI_item_itemType>();
+                
+                AssetDatabase.CreateAsset(item, targetFolderPath + itemName + ".asset");
                 AssetDatabase.SaveAssets();
+                serializedObject = new SerializedObject(item);
+                serializedObject.FindProperty("itemName").stringValue = itemName;
+                serializedObject.FindProperty("displayName").stringValue = displayName;
+                serializedObject.FindProperty("prefab").objectReferenceValue = prefab;
+                serializedObject.FindProperty("icon").objectReferenceValue = icon;
+                serializedObject.ApplyModifiedProperties();
 
                 itemName = null;
                 displayName = null;
@@ -121,14 +125,15 @@ public class NaiveAPI_window_itemEditor : EditorWindow
             targetItem = (NaiveAPI_item_itemType)EditorGUILayout.ObjectField("Select Item", targetItem, typeof(NaiveAPI_item_itemType), false);
             if (targetItem != null)
             {
-                targetItem.itemName = EditorGUILayout.TextField("Item Name", targetItem.itemName);
-                targetItem.displayName = EditorGUILayout.TextField("Display Name", targetItem.displayName);
-                targetItem.prefab = (GameObject)EditorGUILayout.ObjectField("GameObject (prefab)", targetItem.prefab, typeof(GameObject), false);
-                targetItem.icon = (Texture2D)EditorGUILayout.ObjectField("Item icon ", targetItem.icon, typeof(Texture2D), false);
+                serializedObject = new SerializedObject(targetItem);
+                serializedObject.FindProperty("itemName").stringValue = EditorGUILayout.TextField("Item Name", targetItem.itemName);
+                serializedObject.FindProperty("displayName").stringValue = EditorGUILayout.TextField("Display Name", targetItem.displayName);
+                serializedObject.FindProperty("prefab").objectReferenceValue = (GameObject)EditorGUILayout.ObjectField("GameObject (prefab)", targetItem.prefab, typeof(GameObject), false);
+                serializedObject.FindProperty("icon").objectReferenceValue = (Texture2D)EditorGUILayout.ObjectField("Item icon ", targetItem.icon, typeof(Texture2D), false);
+                serializedObject.ApplyModifiedProperties();
             }
             
         }
-            
     }
 
 
