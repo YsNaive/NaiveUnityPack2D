@@ -11,9 +11,11 @@ public class gridSlotCanvas : MonoBehaviour
     public float itemH=0.5f, itemW=0.5f;
 
     [HideInInspector]
-    public bool isShowByInventory = false,isGenerateByIcon = false;
+    public bool isShowByInventory = false, isGenerateByItemList = false, isGenerateByIcon = false;
     [HideInInspector]
-    public NaiveAPI_item_inventory displayList = null;
+    public NaiveAPI_item_inventory displayInventory = null;
+    [HideInInspector]
+    public NaiveAPI_item_itemList displayItemList = null;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +25,7 @@ public class gridSlotCanvas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (displayList.isUIupdate)
+        if (displayInventory.isUIupdate)
         {
             reflushByInventory();
         }
@@ -64,18 +66,29 @@ public class gridSlotCanvas : MonoBehaviour
     public void reflushByInventory()
     {
         clearAll();
-        for (int i = 0; i < displayList.slots.Count; i++)
+        for (int i = 0; i < displayInventory.slots.Count; i++)
         {
-            if (displayList.slots[i].item != null)
+            if (displayInventory.slots[i].item != null)
             {
-                NaiveAPI_item_itemType item = displayList.slots[i].item;
+                NaiveAPI_item_itemType item = displayInventory.slots[i].item;
                 if (isGenerateByIcon)
                     addSlot(item.itemName, Sprite.Create(item.icon, new Rect(0, 0, item.icon.width, item.icon.height), Vector2.zero), backGround, 0.5f, 0.5f, false);
                 else
                     addSlot(item.itemName, item.prefab.GetComponent<SpriteRenderer>().sprite, backGround, 0.5f, 0.5f, false);
             }
         }
-        displayList.isUIupdate = false;
+        displayInventory.isUIupdate = false;
     }
-
+    public void reflushByItemList()
+    {
+        clearAll();
+        for (int i = 0; i < displayItemList.itemList.Count; i++)
+        {
+            NaiveAPI_item_itemType item = displayItemList.itemList[i];
+            if (isGenerateByIcon)
+                addSlot(item.itemName, Sprite.Create(item.icon, new Rect(0, 0, item.icon.width, item.icon.height), Vector2.zero), backGround, 0.5f, 0.5f, false);
+            else
+                addSlot(item.itemName, item.prefab.GetComponent<SpriteRenderer>().sprite, backGround, 0.5f, 0.5f, false);
+        }
+    }
 }

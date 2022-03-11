@@ -84,11 +84,12 @@ public class NaiveAPI_window_itemEditor : EditorWindow
                 Sprite tempSprite = prefab.GetComponent<SpriteRenderer>().sprite;
                 if (x == 0 || x < 0) x = 0;
                 if (y == 0 || y < 0) y = 0;
-                int minWH = (int)(tempSprite.textureRect.width > tempSprite.textureRect.height ? tempSprite.textureRect.width : tempSprite.textureRect.height);
+                int minWH = (int)(tempSprite.texture.width < tempSprite.texture.height ? tempSprite.texture.width : tempSprite.texture.height);
                 if (scale == 0 || scale < 0) scale = 0;
-                if (x > tempSprite.textureRect.width*2) x = (int)tempSprite.textureRect.width*2;
-                if (y > tempSprite.textureRect.height) y = (int)tempSprite.textureRect.height;
                 if (scale > minWH) scale = minWH;
+                if (x + scale > tempSprite.texture.width) x = (int)tempSprite.texture.width - scale;
+                if (y + scale + 1 > tempSprite.texture.height) y = (int)tempSprite.texture.height - scale;
+
                 iconFromPrefab = (Texture2D)EditorGUILayout.ObjectField("icon preview", iconFromPrefab, typeof(Texture2D), false);
                 try { iconFromPrefab = Sprite2Texture(tempSprite, x, y, scale); } catch { Debug.Log("There is no Prefab or Texture is not Readable !"); }
                 
@@ -159,7 +160,7 @@ public class NaiveAPI_window_itemEditor : EditorWindow
     // Sprite to Texture
     public static Texture2D Sprite2Texture(Sprite sprite,int x,int y,int scale)
     {
-        if (scale == 0 || scale < 0) scale = (int)(sprite.textureRect.width > sprite.textureRect.height ? sprite.textureRect.width : sprite.textureRect.height);
+        if (scale == 0 || scale < 0) scale = (int)(sprite.textureRect.width < sprite.textureRect.height ? sprite.textureRect.width : sprite.textureRect.height);
         Texture2D newText = new Texture2D(scale, scale);
         Color[] newColors = sprite.texture.GetPixels(x, y, scale, scale);
         newText.SetPixels(newColors);
