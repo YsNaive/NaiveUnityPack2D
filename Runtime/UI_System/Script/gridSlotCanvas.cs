@@ -11,9 +11,9 @@ public class gridSlotCanvas : MonoBehaviour
     public float itemH=0.5f, itemW=0.5f;
 
     [HideInInspector]
-    public bool isShowByItemList = false,isGenerateByIcon = false;
+    public bool isShowByInventory = false,isGenerateByIcon = false;
     [HideInInspector]
-    public NaiveAPI_item_itemList displayList = null;
+    public NaiveAPI_item_inventory displayList = null;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +23,10 @@ public class gridSlotCanvas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (displayList.isUIupdate)
+        {
+            reflushByInventory();
+        }
     }
 
     public void addSlot(string name,Sprite icon,Sprite backGround ,float x ,float y ,bool showNull)
@@ -57,17 +61,21 @@ public class gridSlotCanvas : MonoBehaviour
                 i++;
         }
     }
-    public void reflushByItemList()
+    public void reflushByInventory()
     {
         clearAll();
-        for (int i = 0; i < displayList.itemList.Count; i++)
+        for (int i = 0; i < displayList.slots.Count; i++)
         {
-            NaiveAPI_item_itemType item = displayList.itemList[i];
-            if(isGenerateByIcon)
-                addSlot(item.itemName, Sprite.Create(item.icon, new Rect(0, 0, item.icon.width, item.icon.height), Vector2.zero), backGround, 0.5f, 0.5f, false);
-            else
-                addSlot(item.itemName, item.prefab.GetComponent<SpriteRenderer>().sprite, backGround, 0.5f, 0.5f,false);
+            if (displayList.slots[i].item != null)
+            {
+                NaiveAPI_item_itemType item = displayList.slots[i].item;
+                if (isGenerateByIcon)
+                    addSlot(item.itemName, Sprite.Create(item.icon, new Rect(0, 0, item.icon.width, item.icon.height), Vector2.zero), backGround, 0.5f, 0.5f, false);
+                else
+                    addSlot(item.itemName, item.prefab.GetComponent<SpriteRenderer>().sprite, backGround, 0.5f, 0.5f, false);
+            }
         }
+        displayList.isUIupdate = false;
     }
 
 }

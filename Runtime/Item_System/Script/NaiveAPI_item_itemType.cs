@@ -10,6 +10,7 @@ public class NaiveAPI_item_itemType : ScriptableObject
     public Texture2D icon;
     public string itemName;
     public string displayName;
+    public int stackLimit;
     public GameObject prefab;
 }
 

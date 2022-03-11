@@ -12,6 +12,7 @@ public class NaiveAPI_window_itemEditor : EditorWindow
     private bool isEditItem = false,isLoadIconFromPrefab = false;
     private SerializedObject serializedObject;
     private NaiveAPI_item_itemType targetItem;
+    private int stackLimit = 1;
     // for image setting
     private int x = 0, y = 0, scale = 0;
     // itemType
@@ -58,6 +59,7 @@ public class NaiveAPI_window_itemEditor : EditorWindow
             
             itemName = EditorGUILayout.TextField("Item Name",itemName);
             displayName = EditorGUILayout.TextField("Display Name", displayName);
+            stackLimit = EditorGUILayout.IntField("Stack limit", stackLimit);
             prefab = (GameObject)EditorGUILayout.ObjectField("GameObject (prefab)", prefab, typeof(GameObject), false);
 
             
@@ -121,12 +123,14 @@ public class NaiveAPI_window_itemEditor : EditorWindow
                     serializedObject = new SerializedObject(item);
                     serializedObject.FindProperty("itemName").stringValue = itemName;
                     serializedObject.FindProperty("displayName").stringValue = displayName;
+                    serializedObject.FindProperty("stackLimit").intValue = stackLimit;
                     serializedObject.FindProperty("prefab").objectReferenceValue = prefab;
                     serializedObject.FindProperty("icon").objectReferenceValue = icon;
                     serializedObject.ApplyModifiedProperties();
 
                     itemName = null;
                     displayName = null;
+                    stackLimit = 1;
                     prefab = null;
                     icon = null;
                     
@@ -142,6 +146,7 @@ public class NaiveAPI_window_itemEditor : EditorWindow
                 serializedObject = new SerializedObject(targetItem);
                 serializedObject.FindProperty("itemName").stringValue = EditorGUILayout.TextField("Item Name", targetItem.itemName);
                 serializedObject.FindProperty("displayName").stringValue = EditorGUILayout.TextField("Display Name", targetItem.displayName);
+                serializedObject.FindProperty("stackLimit").intValue = EditorGUILayout.IntField("Stack limit", targetItem.stackLimit);
                 serializedObject.FindProperty("prefab").objectReferenceValue = (GameObject)EditorGUILayout.ObjectField("GameObject (prefab)", targetItem.prefab, typeof(GameObject), false);
                 serializedObject.FindProperty("icon").objectReferenceValue = (Texture2D)EditorGUILayout.ObjectField("Item icon ", targetItem.icon, typeof(Texture2D), false);
                 serializedObject.ApplyModifiedProperties();
