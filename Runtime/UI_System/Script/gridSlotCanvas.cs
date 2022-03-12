@@ -19,7 +19,10 @@ public class gridSlotCanvas : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (isShowByInventory)
+            reflushByInventory();
+        if (isGenerateByItemList)
+            reflushByItemList();
     }
 
     // Update is called once per frame
