@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace NaiveAPI
 {
-    public class canvasButton : NaiveAPI_button
+    public class UI_objectButton : UI_button
     {  
         public override void localAwake()
         {

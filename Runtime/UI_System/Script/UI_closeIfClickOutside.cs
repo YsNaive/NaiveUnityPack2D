@@ -6,10 +6,10 @@ using UnityEngine.EventSystems;
 
 namespace NaiveAPI
 {
-    public class closeIfClickOutside : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+    public class UI_closeIfClickOutside : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         bool isPointerInside;
-        public NaiveAPI_UI_System UI_System;
+        public UI_System UI_System;
         public void OnPointerEnter(PointerEventData eventData)
         {
             isPointerInside = true;
@@ -23,7 +23,7 @@ namespace NaiveAPI
         // Start is called before the first frame update
         void Start()
         {
-            UI_System = GameObject.Find("UI_Manager").GetComponent<NaiveAPI_UI_System>();
+            UI_System = GameObject.Find("UI_Manager").GetComponent<UI_System>();
         }
 
         // Update is called once per frame
