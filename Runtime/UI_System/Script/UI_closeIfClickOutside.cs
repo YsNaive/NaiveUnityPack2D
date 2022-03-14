@@ -32,8 +32,7 @@ namespace NaiveAPI
             //§PÂ_¬O§_ÂI¿ïUI
             if (Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began))
             {
-                UI_System.setActive(gameObject.name, isPointerInside);
-                UI_System.displayReflush();
+                UI_System.setActive(gameObject, isPointerInside);
             }
         }
     }

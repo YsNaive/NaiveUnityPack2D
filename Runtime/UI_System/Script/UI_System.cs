@@ -13,7 +13,8 @@ namespace NaiveAPI
         [HideInInspector]
         public bool isCloseClickOutside;
 
-
+        public List<switchByKeyCode> switchByKeyCode = new List<switchByKeyCode>();
+        public List<holdByKeyCode> holdByKeyCode = new List<holdByKeyCode>();
         public override void localAwake()
         {
             throw new System.NotImplementedException();
@@ -24,15 +25,27 @@ namespace NaiveAPI
         private void Start()
         {
             loadUIstructure();
-            displayReflush();
         }
 
         private void Update()
         {
-        
+            for(int i = 0; i < switchByKeyCode.Count; i++)
+            {
+                if (Input.GetKeyDown(switchByKeyCode[i].keyCode))
+                {
+                    switchByKeyCode[i].state = !switchByKeyCode[i].state;
+                    setActive(switchByKeyCode[i].targetObject, switchByKeyCode[i].state);
+                }
+            }
+            for (int i = 0; i < holdByKeyCode.Count; i++)
+            {
+                setActive(holdByKeyCode[i].targetObject , Input.GetKey(holdByKeyCode[i].keyCode));
+            }
+
+            reflush();
         }
 
-        public void displayReflush()
+        public void reflush()
         {
             for(int i = 0; i < UIS.Count; i++)
             {
@@ -52,7 +65,7 @@ namespace NaiveAPI
         public void loadUIstructure()
         {
             UIS.Clear();
-            Transform[] allChild = this.GetComponentsInChildren<Transform>(true);
+            Transform[] allChild = GetComponentsInChildren<Transform>(true);
             int j = 0;
             for (int i=0; i < allChild.Length; i++)
             {
@@ -60,18 +73,23 @@ namespace NaiveAPI
                 {
                     UIS.Add(new UI_infomation());
                     UIS[j].thisUI_state = allChild[i].GetComponent<UI_state>();
+                    UIS[j].displayName = allChild[i].name;
                     UIS[j].isActive = UIS[j].thisUI_state.isActive;
                     UIS[j].ignoreClear = UIS[j].thisUI_state.ignoreClear;
                     UIS[j].thisUI = allChild[i].gameObject;
                     j++;
                 }
             }
+            for (int i = 0; i < switchByKeyCode.Count; i++)
+            {
+                switchByKeyCode[i].state = UIS[searchStructure(switchByKeyCode[i].targetObject)].isActive;
+            }
         }
-        public int searchStructure(string searchName)
+        public int searchStructure(GameObject searchObject)
         {
             for(int i = 0; i < UIS.Count; i++)
             {
-                if (searchName == UIS[i].thisUI.name)
+                if (searchObject == UIS[i].thisUI)
                     return i;
             }
             return -1;
@@ -86,21 +104,35 @@ namespace NaiveAPI
             isCloseClickOutside = false;
         }
 
-        public void setActive(string targetName,bool isActive)
+        public void setActive(GameObject targetObject,bool isActive)
         {
-            try { UIS[searchStructure(targetName)].isActive = isActive;}
-            catch {  }
-        
+            try { UIS[searchStructure(targetObject)].isActive = isActive;}
+            catch { print("Target : " + targetObject + " Not Found"); }
         }
     }
 
     [System.Serializable]
     public class UI_infomation
     {
+        [HideInInspector]
+        public string displayName;
         public GameObject thisUI;
         [HideInInspector]
         public UI_state thisUI_state;
+       
         public bool isActive, ignoreClear;
     }
-    
+    [System.Serializable]
+    public class switchByKeyCode
+    {
+        public string keyCode;
+        public GameObject targetObject;
+        public bool state;
+    }
+    [System.Serializable]
+    public class holdByKeyCode
+    {
+        public string keyCode;
+        public GameObject targetObject;
+    }
 }

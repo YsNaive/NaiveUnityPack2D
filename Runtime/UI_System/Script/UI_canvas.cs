@@ -57,7 +57,7 @@ namespace NaiveAPI
                     i.GetComponent<UI_button>().ButtonType = buttonType.ToString();
                     UI_objectButton cb = i.GetComponent<UI_objectButton>();
                     cb.isCloseSelfCanvas = isCloseSelfCanvas;
-                    if (isOpenOtherObject) cb.openObject = targetObject.name; else cb.openObject = null;
+                    if (isOpenOtherObject) cb.openObject = targetObject; else cb.openObject = null;
                     break;
                 case buttonType.customButton:
                     break;

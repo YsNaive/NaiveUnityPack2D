@@ -10,12 +10,12 @@ namespace NaiveAPI
     {
         public int slotLimit = 0;
         public bool isUIupdate = false;
-        public List<slot> slots = new List<slot>();
+        public List<item_slot> slots = new List<item_slot>();
     }
     [System.Serializable]
-    public class slot
+    public class item_slot
     {
-        public slot()
+        public item_slot()
         {
             item = null;
             stack = 0;

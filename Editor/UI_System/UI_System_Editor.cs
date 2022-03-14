@@ -54,7 +54,7 @@ namespace NaiveAPI
 			}
 			if (GUILayout.Button("Display"))
 			{
-				UI_System.displayReflush();
+				UI_System.reflush();
 			}
 			if (GUILayout.Button("Clear"))
 			{

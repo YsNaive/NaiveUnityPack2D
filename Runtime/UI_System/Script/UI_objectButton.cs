@@ -12,7 +12,7 @@ namespace NaiveAPI
         }
 
         [SerializeField]
-        public string openObject;
+        public GameObject openObject;
         [SerializeField]
         public bool isCloseSelfCanvas;
 
@@ -24,9 +24,7 @@ namespace NaiveAPI
         public override void onClick()
         {
             if (openObject != null) UI_System.setActive(openObject, true);
-            if (isCloseSelfCanvas) UI_System.setActive(transform.parent.name,false);
-
-            UI_System.displayReflush();
+            if (isCloseSelfCanvas) UI_System.setActive(transform.parent.gameObject,false);
         }
 
 

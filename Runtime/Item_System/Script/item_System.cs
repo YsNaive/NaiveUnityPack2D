@@ -8,12 +8,35 @@ namespace NaiveAPI
     {
         public item_inventory inventory;
 
+        // 清除背包所有物品
+        public void clear()
+        {
+            for (int i = 0; i < inventory.slots.Count; i++)
+            {
+                inventory.slots[i] = null;
+            }
+        }
+
+        // 清除指定欄位
+        public void clearAt(int number)
+        {
+            inventory.slots[number] = null;
+        }
+        public int ifItemHolding(item_itemType searchItem)
+        {
+            int output = 0;
+            for (int i = 0; i < inventory.slots.Count; i++)
+            {
+                if (searchItem == inventory.slots[i].item) output += inventory.slots[i].stack;
+            }
+            return output;
+        }
         public bool push(item_itemType item)
         {
-            slot emptySlot = null;
+            item_slot emptySlot = null;
             for(int i = 0; i < inventory.slotLimit; i++)
             {
-                slot slot = inventory.slots[i];
+                item_slot slot = inventory.slots[i];
                 if (slot.item == item && slot.stack < item.stackLimit)
                 {
                     slot.stack++;
@@ -38,7 +61,7 @@ namespace NaiveAPI
         {
             for (int i = 0; i < inventory.slotLimit; i++)
             {
-                slot slot = inventory.slots[i];
+                item_slot slot = inventory.slots[i];
                 if(slot.item == item && slot.stack > 0)
                 {
                     slot.stack--;
@@ -54,9 +77,9 @@ namespace NaiveAPI
             return false;
         }
 
-        public bool putAt(item_itemType item,int number)
+        public bool pushAt(item_itemType item,int number)
         {
-            slot slot = inventory.slots[number];
+            item_slot slot = inventory.slots[number];
             if (slot.item == item && slot.stack < item.stackLimit)
             {
                 slot.stack++;
@@ -72,10 +95,10 @@ namespace NaiveAPI
             }
             else return false;
         }
-        public item_itemType takeAt(int number)
+        public item_itemType pullAt(int number)
         {
             item_itemType output = null;
-            slot slot = inventory.slots[number];
+            item_slot slot = inventory.slots[number];
             if (slot.item != null)
             {
                 output = slot.item;
@@ -87,6 +110,24 @@ namespace NaiveAPI
                 }
                 inventory.isUIupdate = true;
             }
+            return output;
+        }
+
+        public List<item_slot> pullAll()
+        {
+            List<item_slot> output = new List<item_slot>();
+            for(int i = 0; i < inventory.slots.Count; i++)
+            {
+                output.Add(inventory.slots[i]);
+            }
+            clear();
+            return output;
+        }
+        public item_slot pullAllat(int number)
+        {
+            item_slot output;
+            output=inventory.slots[number];
+            clearAt(number);
             return output;
         }
     }
