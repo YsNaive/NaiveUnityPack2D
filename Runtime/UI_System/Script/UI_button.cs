@@ -8,9 +8,7 @@ namespace NaiveAPI
 {
     public abstract class UI_button : MonoBehaviour
     {
-        [SerializeField]
-        public string ButtonType;
-
+        [HideInInspector]
         public UI_System UI_System;
         void Awake()
         {

@@ -8,13 +8,12 @@ namespace NaiveAPI
 	[CustomEditor(typeof(UI_System))]
 	public class UI_System_Editor : Editor
 	{
-		public GameObject normalCanvas,gridSlotCanvas;
+		public GameObject normalCanvas;
 		public UI_System UI_System;
 
 		public enum CanvasType
 		{
-			normalCanvas,
-			gridSlotCanvas
+			normalCanvas
 		}
 		public CanvasType canvasType;
 		private void OnEnable()
@@ -33,9 +32,6 @@ namespace NaiveAPI
 				{
 					case CanvasType.normalCanvas:
 						UI_System.addCanvas(normalCanvas);
-						break;
-					case CanvasType.gridSlotCanvas:
-						UI_System.addCanvas(gridSlotCanvas);
 						break;
 					default:
 						break;

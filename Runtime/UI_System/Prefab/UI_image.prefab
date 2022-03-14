@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2806266970818137513}
   - component: {fileID: 4127114299315413124}
   m_Layer: 5
-  m_Name: NaiveAPI_UI_image
+  m_Name: UI_image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

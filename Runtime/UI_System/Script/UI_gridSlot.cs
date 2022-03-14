@@ -7,10 +7,8 @@ namespace NaiveAPI
 {
     public class UI_gridSlot : MonoBehaviour
     {
-        [HideInInspector]
-        public GameObject slotPrefab;
-        public Sprite icon, backGround;
-        public float itemH=0.5f, itemW=0.5f;
+        public GameObject slotBased;
+        public Sprite icon;
 
         [HideInInspector]
         public bool isShowByInventory = false, isGenerateByItemList = false, isGenerateByIcon = false;
@@ -21,6 +19,7 @@ namespace NaiveAPI
         // Start is called before the first frame update
         void Start()
         {
+            slotBased.SetActive(false);
             if (isShowByInventory)
                 reflushByInventory();
             if (isGenerateByItemList)
@@ -40,13 +39,12 @@ namespace NaiveAPI
 
         }
 
-        public void addSlot(string name,Sprite icon,Sprite backGround ,float x ,float y ,bool showNull)
+        public void addSlot(string name,Sprite icon,string text,bool showNull)
         {
-            GameObject slot = Instantiate(slotPrefab, transform);
+            GameObject slot = Instantiate(slotBased, transform);
             slot.name = name;
-            slot.GetComponent<RectTransform>().localScale = new Vector2(x, y);
-            slot.transform.GetChild(0).GetComponent<Image>().sprite = backGround;
             slot.transform.GetChild(1).GetComponent<Image>().sprite = icon;
+            slot.transform.GetChild(2).GetComponent<Text>().text = text;
 
             if (!showNull)
             {
@@ -56,11 +54,13 @@ namespace NaiveAPI
                     slot.transform.GetChild(1).GetComponent<Image>().color = new Color(0, 0, 0, 0);
             }
 
+            slot.SetActive(gameObject.activeSelf);
         }
         public void clearAll()
         {
             for (int i = 0; i < transform.childCount;)
-                DestroyImmediate(transform.GetChild(i).gameObject);
+                if (transform.GetChild(i).name != "slotBased") DestroyImmediate(transform.GetChild(i).gameObject);
+                else i++;
         }
         public void clearPreview()
         {
@@ -81,9 +81,9 @@ namespace NaiveAPI
                 {
                     item_itemType item = displayInventory.slots[i].item;
                     if (isGenerateByIcon)
-                        addSlot(item.itemName, Sprite.Create(item.icon, new Rect(0, 0, item.icon.width, item.icon.height), Vector2.zero), backGround, 0.5f, 0.5f, false);
+                        addSlot(item.itemName, Sprite.Create(item.icon, new Rect(0, 0, item.icon.width, item.icon.height), Vector2.zero),  item.displayName,  false);
                     else
-                        addSlot(item.itemName, item.prefab.GetComponent<SpriteRenderer>().sprite, backGround, 0.5f, 0.5f, false);
+                        addSlot(item.itemName, item.prefab.GetComponent<SpriteRenderer>().sprite, item.displayName,  false);
                 }
             }
             displayInventory.isUIupdate = false;
@@ -95,9 +95,9 @@ namespace NaiveAPI
             {
                 item_itemType item = displayItemList.itemList[i];
                 if (isGenerateByIcon)
-                    addSlot(item.itemName, Sprite.Create(item.icon, new Rect(0, 0, item.icon.width, item.icon.height), Vector2.zero), backGround, 0.5f, 0.5f, false);
+                    addSlot(item.itemName, Sprite.Create(item.icon, new Rect(0, 0, item.icon.width, item.icon.height), Vector2.zero),  item.displayName,  false);
                 else
-                    addSlot(item.itemName, item.prefab.GetComponent<SpriteRenderer>().sprite, backGround, 0.5f, 0.5f, false);
+                    addSlot(item.itemName, item.prefab.GetComponent<SpriteRenderer>().sprite,  item.displayName, false);
             }
         }
     }

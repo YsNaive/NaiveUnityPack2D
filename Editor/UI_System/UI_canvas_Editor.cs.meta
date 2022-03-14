@@ -4,9 +4,10 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - cavanButton: {fileID: 3614381256671979155, guid: 5efbcb59009db364a8bdc1138c4b8398, type: 3}
+  - objectButton: {fileID: 3614381256671979155, guid: 5efbcb59009db364a8bdc1138c4b8398, type: 3}
   - customButton: {fileID: 6020246586403127344, guid: 563a343c22bfb844b8edfea701b108bd, type: 3}
   - image: {fileID: 575051597458154758, guid: ca9712108884cb447be772d77a033ace, type: 3}
+  - gridSlot: {fileID: 6888890011603446161, guid: b2c0c29e0a9163b43a3c95c48ebece7b, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
