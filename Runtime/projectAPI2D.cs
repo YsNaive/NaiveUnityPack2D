@@ -20,7 +20,7 @@ public abstract class projectAPI2D : MonoBehaviour
     }
     public abstract void localAwake();
 
-
+    
 
     // 取值相關
     /*---------------------------------------------------------------------------------------------------*/
@@ -49,15 +49,16 @@ public abstract class projectAPI2D : MonoBehaviour
     /// </summary>
     public GameObject[] myChild() { return myChild(-1, "\0", false); }
     public GameObject myChild(int number) { return myChild(number, "\0", false)[0]; }
-    public GameObject[] myChild(string searchTag) { return myChild(-1, searchTag, false); }
-    public GameObject myChild(string searchTag, bool isOnlyFirst) { return myChild(-1, searchTag, isOnlyFirst)[0]; }
-    public GameObject[] myChild(int number, string searchTag, bool isOnlyFirst)
+    public GameObject[] myChild(string searchName) { return myChild(-1, searchName, false); }
+    public GameObject myChild(string searchName, bool isOnlyFirst) { return myChild(-1, searchName, isOnlyFirst)[0]; }
+    public GameObject[] myChild(int number, string searchName, bool isOnlyFirst)
     {
         // number      預設為 -1        輸出所有
         // searchTag   預設為 "\0"      依照Tag搜尋
         // isOnlyFirst 預設為 false     search標頭的修飾子，是否只輸出一個項目 ?
 
         List<GameObject> output = new List<GameObject>();
+        string searchObj;
 
         if (number != -1)
             output.Add(this.transform.GetChild(number).gameObject);
@@ -65,7 +66,12 @@ public abstract class projectAPI2D : MonoBehaviour
         {
             for (int i = 0; i < this.transform.childCount; i++)
             {
-                if (searchTag == "\0" || searchTag == this.transform.GetChild(i).tag)
+                if (searchName.IndexOf("tag=") != -1)
+                    searchObj = "tag=" + this.transform.GetChild(i).tag;
+                else
+                    searchObj = this.transform.GetChild(i).name;
+
+                if (searchName == "\0" || searchName == searchObj)
                 {
                     output.Add(this.transform.GetChild(i).gameObject);
                     if (isOnlyFirst)
@@ -117,4 +123,5 @@ public abstract class projectAPI2D : MonoBehaviour
     public void setAnimator(string targetName, int intValue) { animator.SetInteger(targetName, intValue); }
     public void setAnimator(string targetName, float floatValue) { animator.SetFloat(targetName, floatValue); }
     
+
 }

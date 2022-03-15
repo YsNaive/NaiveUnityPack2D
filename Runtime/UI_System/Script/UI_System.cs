@@ -33,8 +33,7 @@ namespace NaiveAPI
             {
                 if (Input.GetKeyDown(switchByKeyCode[i].keyCode))
                 {
-                    switchByKeyCode[i].state = !switchByKeyCode[i].state;
-                    setActive(switchByKeyCode[i].targetObject, switchByKeyCode[i].state);
+                    setActive(switchByKeyCode[i].targetObject, ! switchByKeyCode[i].targetObject.GetComponent<UI_state>().isActive);
                 }
             }
             for (int i = 0; i < holdByKeyCode.Count; i++)
@@ -80,10 +79,6 @@ namespace NaiveAPI
                     j++;
                 }
             }
-            for (int i = 0; i < switchByKeyCode.Count; i++)
-            {
-                switchByKeyCode[i].state = UIS[searchStructure(switchByKeyCode[i].targetObject)].isActive;
-            }
         }
         public int searchStructure(GameObject searchObject)
         {
@@ -126,8 +121,7 @@ namespace NaiveAPI
     public class switchByKeyCode
     {
         public string keyCode;
-        public GameObject targetObject;
-        public bool state;
+        public GameObject targetObject; 
     }
     [System.Serializable]
     public class holdByKeyCode
