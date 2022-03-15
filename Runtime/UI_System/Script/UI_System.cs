@@ -33,7 +33,7 @@ namespace NaiveAPI
             {
                 if (Input.GetKeyDown(switchByKeyCode[i].keyCode))
                 {
-                    setActive(switchByKeyCode[i].targetObject, ! switchByKeyCode[i].targetObject.GetComponent<UI_state>().isActive);
+                    setActive(switchByKeyCode[i].targetObject, UIS[searchStructure(switchByKeyCode[i].targetObject)].isActive);
                 }
             }
             for (int i = 0; i < holdByKeyCode.Count; i++)
