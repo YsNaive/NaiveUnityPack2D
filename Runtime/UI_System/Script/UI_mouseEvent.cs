@@ -11,12 +11,11 @@ namespace NaiveAPI
         private bool isPointerInside;
         [HideInInspector]
         public UI_System UI_System;
-        public bool isCloseWhenClickOutside = false;
         public void OnPointerEnter(PointerEventData eventData)
         {
             isPointerInside = true;
         }
-
+        
         public void OnPointerExit(PointerEventData eventData)
         {
             isPointerInside = false;
@@ -25,7 +24,7 @@ namespace NaiveAPI
         // Start is called before the first frame update
         void Start()
         {
-            UI_System = GameObject.Find("UI_Manager").GetComponent<UI_System>();
+            UI_System = transform.Find("UI_Manager").GetComponent<UI_System>();
         }
 
         // Update is called once per frame
@@ -34,10 +33,14 @@ namespace NaiveAPI
             //§PÂ_¬O§_ÂI¿ïUI
             if (Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began))
             {
-                if(isCloseWhenClickOutside)
-                    UI_System.setActive(gameObject, isPointerInside);
+
             }
         }
+        void OnMouseDown()
+        {
+            
+        }
+
     }
 }
 

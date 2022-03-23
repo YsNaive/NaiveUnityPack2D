@@ -19,14 +19,14 @@ namespace NaiveAPI
         {
             for (int i = 0; i < slots.Count; i++)
             {
-                slots[i] = null;
+                slots[i] = new item_slot();
             }
         }
 
         // 清除指定欄位
         public void clearAt(int number)
         {
-            slots[number] = null;
+            slots[number] = new item_slot();
         }
         public int ifItemHolding(item_itemType searchItem)
         {
@@ -73,8 +73,7 @@ namespace NaiveAPI
                     slot.stack--;
                     if (slot.stack <= 0)
                     {
-                        slot.item = null;
-                        slot.stack = 0;
+                        slot = new item_slot();
                     }
                     isUIupdate = true;
                     return true;
@@ -111,8 +110,7 @@ namespace NaiveAPI
                 slot.stack--;
                 if (slot.stack <= 0)
                 {
-                    slot.item = null;
-                    slot.stack = 0;
+                    slot = new item_slot();
                 }
                 isUIupdate = true;
             }

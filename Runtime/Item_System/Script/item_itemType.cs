@@ -11,8 +11,8 @@ namespace NaiveAPI
         public string displayName;
         public int stackLimit;
         public GameObject prefab;
-        [TextArea]
-        public string information;
+        [SerializeField]
+        public object customInfo;
     }
 }
 
