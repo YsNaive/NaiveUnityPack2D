@@ -7,6 +7,7 @@ namespace NaiveAPI
 {
     public class UI_gridSlot : MonoBehaviour
     {
+        [HideInInspector]
         public GameObject slotBased;
         public Sprite icon;
 
