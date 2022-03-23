@@ -3,10 +3,9 @@ using UnityEngine;
 
 
 namespace NaiveAPI
-{
-    [CreateAssetMenu(menuName = "NaiveAPI/Item System/Inventory")]
+{ 
     [System.Serializable]
-    public class item_inventory : ScriptableObject
+    public class item_inventory : MonoBehaviour
     {
         public int slotLimit = 0;
         public bool isUIupdate = false;

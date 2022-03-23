@@ -30,7 +30,7 @@ namespace NaiveAPI
 			if (UI_gridSlot.isShowByInventory)
 			{
 
-				UI_gridSlot.displayInventory = (item_inventory)EditorGUILayout.ObjectField("Inventory", UI_gridSlot.displayInventory, typeof(item_inventory), false);
+				UI_gridSlot.displayByItemSystem = (GameObject)EditorGUILayout.ObjectField("Inventory", UI_gridSlot.displayByItemSystem, typeof(GameObject), true);
 				if (!UI_gridSlot.isGenerateByIcon)
 				{
 					if (GUILayout.Button("Generate By Prefab")) UI_gridSlot.isGenerateByIcon = true;
@@ -58,21 +58,21 @@ namespace NaiveAPI
 					UI_gridSlot.reflushByItemList();
 				}
 			}
-			else
+
+			GUILayout.Space(30);
+			base.OnInspectorGUI();
+			serializedObject.Update();
+
+
+			if (GUILayout.Button("Add Slot"))
 			{
-				base.OnInspectorGUI();
-				serializedObject.Update();
-
-
-				if (GUILayout.Button("Add Slot"))
-				{
-					UI_gridSlot.addSlot("Slot", UI_gridSlot.icon, null, false);
-				}
-				if (GUILayout.Button("Add preview Slot"))
-					UI_gridSlot.addSlot("previewSlot", UI_gridSlot.icon, null, true);
-				if (GUILayout.Button("Clear preview slot"))
-					UI_gridSlot.clearPreview();
+				UI_gridSlot.addSlot("Slot", UI_gridSlot.icon, null, false);
 			}
+			if (GUILayout.Button("Add preview Slot"))
+				UI_gridSlot.addSlot("previewSlot", UI_gridSlot.icon, null, true);
+			if (GUILayout.Button("Clear preview slot"))
+				UI_gridSlot.clearPreview();
+			
 		}
 	}
 }

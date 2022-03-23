@@ -1,0 +1,1284 @@
+fileFormatVersion: 2
+guid: 5ef425b0427654446b9917265d099979
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2137556462626912682
+    second: floor_snow_1_0
+  - first:
+      213: 5234053628804744009
+    second: floor_snow_1_1
+  - first:
+      213: 1434749781205356931
+    second: floor_snow_1_2
+  - first:
+      213: 8797445911287738304
+    second: floor_snow_1_3
+  - first:
+      213: -4575667282696998008
+    second: floor_snow_1_4
+  - first:
+      213: -4255872063163318905
+    second: floor_snow_1_8
+  - first:
+      213: 6849620294961902697
+    second: floor_snow_1_9
+  - first:
+      213: 6599732161265643048
+    second: floor_snow_1_10
+  - first:
+      213: -6883032250134348322
+    second: floor_snow_1_11
+  - first:
+      213: 1994443500060217402
+    second: floor_snow_1_12
+  - first:
+      213: 8530317615988562667
+    second: floor_snow_1_16
+  - first:
+      213: 260421859501148015
+    second: floor_snow_1_17
+  - first:
+      213: 3964458849569850161
+    second: floor_snow_1_18
+  - first:
+      213: -6834357289020677452
+    second: floor_snow_1_19
+  - first:
+      213: -4624080204474014830
+    second: floor_snow_1_20
+  - first:
+      213: -6204401241290456978
+    second: floor_snow_1_21
+  - first:
+      213: -7658751831961324976
+    second: floor_snow_1_24
+  - first:
+      213: 1122791994642969071
+    second: floor_snow_1_25
+  - first:
+      213: 2179598541045881896
+    second: floor_snow_1_26
+  - first:
+      213: 7687653017442462816
+    second: floor_snow_1_27
+  - first:
+      213: 2217453474620275434
+    second: floor_snow_1_28
+  - first:
+      213: 3323298053267258129
+    second: floor_snow_1_29
+  - first:
+      213: 5052473187345918451
+    second: floor_snow_1_30
+  - first:
+      213: -6025374506509004179
+    second: floor_snow_1_31
+  - first:
+      213: 2745682485298083755
+    second: floor_snow_1_32
+  - first:
+      213: 4216961689834587825
+    second: floor_snow_1_33
+  - first:
+      213: 823609807592825098
+    second: floor_snow_1_34
+  - first:
+      213: 2235073754022492592
+    second: floor_snow_1_35
+  - first:
+      213: 6971928602418537428
+    second: floor_snow_1_36
+  - first:
+      213: -2384793625290244041
+    second: floor_snow_1_37
+  - first:
+      213: -5091034559015353826
+    second: floor_snow_1_38
+  - first:
+      213: -1767053689439446410
+    second: floor_snow_1_39
+  - first:
+      213: -8288437164193560840
+    second: floor_snow_1_40
+  - first:
+      213: 2971107637993966423
+    second: floor_snow_1_41
+  - first:
+      213: -4780223661377626438
+    second: floor_snow_1_42
+  - first:
+      213: -9187932580826792001
+    second: floor_snow_1_43
+  - first:
+      213: -5478941515343188531
+    second: floor_snow_1_44
+  - first:
+      213: 4201723090179426926
+    second: floor_snow_1_45
+  - first:
+      213: -5299321978011055252
+    second: floor_snow_1_46
+  - first:
+      213: 6301081321764820989
+    second: floor_snow_1_47
+  - first:
+      213: 5491032618371223113
+    second: floor_snow_1_48
+  - first:
+      213: 5115221984759060792
+    second: floor_snow_1_49
+  - first:
+      213: 4164502570271499390
+    second: floor_snow_1_50
+  - first:
+      213: 3649544462695593107
+    second: floor_snow_1_51
+  - first:
+      213: -1770657675238910271
+    second: floor_snow_1_52
+  - first:
+      213: -265546614478723772
+    second: floor_snow_1_53
+  - first:
+      213: -6438014300982314712
+    second: floor_snow_1_54
+  - first:
+      213: 3340481084498015798
+    second: floor_snow_1_55
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: floor_snow_1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa9b73a07402aad10800000000000000
+      internalID: 2137556462626912682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94340405b0813a840800000000000000
+      internalID: 5234053628804744009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 381905a035149e310800000000000000
+      internalID: 1434749781205356931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cfa409027ec61a70800000000000000
+      internalID: 8797445911287738304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 883f77c69d6ff70c0800000000000000
+      internalID: -4575667282696998008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d34a938ea10f4c0800000000000000
+      internalID: -4255872063163318905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 964b28f0e5dbe0f50800000000000000
+      internalID: 6849620294961902697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_10
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82ea5fc0f65f69b50800000000000000
+      internalID: 6599732161265643048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_11
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd3f29e2ae8a70a0800000000000000
+      internalID: -6883032250134348322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_12
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a301da9dbcfadab10800000000000000
+      internalID: 1994443500060217402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea514a1da6c16670800000000000000
+      internalID: 8530317615988562667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_17
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f67005b2d443d9300800000000000000
+      internalID: 260421859501148015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_18
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 133c34fa156940730800000000000000
+      internalID: 3964458849569850161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_19
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b222df614c7721a0800000000000000
+      internalID: -6834357289020677452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_20
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 293296fad87f3dfb0800000000000000
+      internalID: -4624080204474014830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_21
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1024
+        width: 768
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e60c3e081f985e9a0800000000000000
+      internalID: -6204401241290456978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 052b21169c5a6b590800000000000000
+      internalID: -7658751831961324976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_25
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe1b85dce55f49f00800000000000000
+      internalID: 1122791994642969071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_26
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82cdff7335d7f3e10800000000000000
+      internalID: 2179598541045881896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_27
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06c2e1d30b700ba60800000000000000
+      internalID: 7687653017442462816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_28
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea72b4cf2af5ce10800000000000000
+      internalID: 2217453474620275434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_29
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11bfdbbc8f9be1e20800000000000000
+      internalID: 3323298053267258129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_30
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f960f0489dfd1640800000000000000
+      internalID: 5052473187345918451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_31
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6216d46fc1916ca0800000000000000
+      internalID: -6025374506509004179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba734325caf9a1620800000000000000
+      internalID: 2745682485298083755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_33
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b685028058a58a30800000000000000
+      internalID: 4216961689834587825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_34
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a01291f91cc0e6b00800000000000000
+      internalID: 823609807592825098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_35
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b93f43ccb3940f10800000000000000
+      internalID: 2235073754022492592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_36
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d3ea82002441c060800000000000000
+      internalID: 6971928602418537428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_37
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73085fd35d287eed0800000000000000
+      internalID: -2384793625290244041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_38
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1207a2ca030959b0800000000000000
+      internalID: -5091034559015353826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_39
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a1bed180a2a77e0800000000000000
+      internalID: -1767053689439446410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6c81d205e89fc80800000000000000
+      internalID: -8288437164193560840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_41
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b8418b7ae7b3920800000000000000
+      internalID: 2971107637993966423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_42
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe5bac18eb39adb0800000000000000
+      internalID: -4780223661377626438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_43
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbfb49b5ff7ed7080800000000000000
+      internalID: -9187932580826792001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_44
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd24d078b3e6f3b0800000000000000
+      internalID: -5478941515343188531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_45
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a83ba83e48f4a30800000000000000
+      internalID: 4201723090179426926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_46
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6b0b3eecb60576b0800000000000000
+      internalID: -5299321978011055252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_47
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df714acd310f17750800000000000000
+      internalID: 6301081321764820989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94e891cd211143c40800000000000000
+      internalID: 5491032618371223113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_49
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83915d42b4becf640800000000000000
+      internalID: 5115221984759060792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_50
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e74eb3fe5094bc930800000000000000
+      internalID: 4164502570271499390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_51
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 394f6fa4a59c5a230800000000000000
+      internalID: 3649544462695593107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_52
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c6d098c93c5d67e0800000000000000
+      internalID: -1770657675238910271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_53
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44520b4d2c6905cf0800000000000000
+      internalID: -265546614478723772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_54
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82970137a1497a6a0800000000000000
+      internalID: -6438014300982314712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_snow_1_55
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6367a6409d5cb5e20800000000000000
+      internalID: 3340481084498015798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

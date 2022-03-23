@@ -13,17 +13,27 @@ namespace NaiveAPI
         [HideInInspector]
         public bool isShowByInventory = false, isGenerateByItemList = false, isGenerateByIcon = false;
         [HideInInspector]
-        public item_inventory displayInventory = null;
+        public GameObject displayByItemSystem;
         [HideInInspector]
-        public item_itemList displayItemList = null;
+        public item_inventory displayInventory;
+        [HideInInspector]
+        public item_itemList displayItemList;
+
+        private void Awake()
+        {
+            displayInventory = displayByItemSystem.gameObject.GetComponent<item_inventory>();
+        }
         // Start is called before the first frame update
         void Start()
         {
+            
             slotBased.SetActive(false);
             if (isShowByInventory)
                 reflushByInventory();
             if (isGenerateByItemList)
                 reflushByItemList();
+            
+            if(displayInventory == null) print("Can not find item_inventory on [ " + displayByItemSystem + " ]\nPlease check your setting !"); 
         }
 
         // Update is called once per frame
