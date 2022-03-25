@@ -12,7 +12,6 @@ namespace NaiveAPI
 
             string jsonData = JsonUtility.ToJson(saveObject);
             File.WriteAllText(directory + fileName, jsonData);
-            Debug.Log("File Save at "+ directory + fileName);
         }
 
         // 從路徑讀取檔案
