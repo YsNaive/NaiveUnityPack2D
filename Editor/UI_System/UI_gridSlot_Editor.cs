@@ -30,7 +30,7 @@ namespace NaiveAPI
 			if (UI_gridSlot.isShowByInventory)
 			{
 
-				UI_gridSlot.displayByItemSystem = (GameObject)EditorGUILayout.ObjectField("Inventory", UI_gridSlot.displayByItemSystem, typeof(GameObject), true);
+				UI_gridSlot.displayInventory = (item_inventory)EditorGUILayout.ObjectField("Inventory", UI_gridSlot.displayInventory, typeof(item_inventory), true);
 				if (!UI_gridSlot.isGenerateByIcon)
 				{
 					if (GUILayout.Button("Generate By Prefab")) UI_gridSlot.isGenerateByIcon = true;
