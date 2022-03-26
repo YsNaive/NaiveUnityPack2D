@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 namespace NaiveAPI
 {
-    public class UI_tooltips :MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+    public abstract class UI_tooltips :MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         public GameObject toolTips;
         public bool isFollowPointer = false;

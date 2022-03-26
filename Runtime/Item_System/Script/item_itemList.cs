@@ -14,7 +14,7 @@ namespace NaiveAPI
         {
             for (int i = 0; i < itemList.Count; i++)
             {
-                if (name == itemList[i].prefab.name)
+                if (name == itemList[i].name)
                     return itemList[i].prefab;
             }
             return null;
