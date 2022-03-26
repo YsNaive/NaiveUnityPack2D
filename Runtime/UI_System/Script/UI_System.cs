@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 
 namespace NaiveAPI
 {
-    public class UI_System : projectAPI2D
+    public class UI_System : NaiveAPI2D
     {
         [HideInInspector]
         public string canvasName;
@@ -15,7 +15,7 @@ namespace NaiveAPI
 
         public List<switchByKeyCode> switchByKeyCode = new List<switchByKeyCode>();
         public List<holdByKeyCode> holdByKeyCode = new List<holdByKeyCode>();
-        public override void localAwake()
+        public override void LocalAwake()
         {
             throw new System.NotImplementedException();
         }

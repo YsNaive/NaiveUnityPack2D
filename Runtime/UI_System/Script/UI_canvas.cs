@@ -14,7 +14,7 @@ namespace NaiveAPI
         image
     }
 
-    public class UI_canvas : projectAPI2D
+    public class UI_canvas : NaiveAPI2D
     {
         [HideInInspector]
         public objectType buttonType = objectType.objectButton;
@@ -23,7 +23,7 @@ namespace NaiveAPI
         [HideInInspector]
         public bool isCloseClickOutside;
 
-        public override void localAwake()
+        public override void LocalAwake()
         {
             throw new System.NotImplementedException();
         }
