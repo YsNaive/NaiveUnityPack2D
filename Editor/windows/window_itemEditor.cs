@@ -51,24 +51,18 @@ namespace NaiveAPI
 
         private void OnEnable()
         {
-            if (AssetDatabase.FindAssets("Assets/Samples/NaiveUnity Pack/config/item group list.json").Length == 0)
-            {
-                if (!AssetDatabase.IsValidFolder("Assets/Samples/NaiveUnity Pack/config"))
-                {
-                    if (!AssetDatabase.IsValidFolder("Assets/Samples/NaiveUnity Pack"))
-                    {
-                        if (!AssetDatabase.IsValidFolder("Assets/Samples"))
-                            AssetDatabase.CreateFolder("Assets", "Samples");
+            if (!AssetDatabase.IsValidFolder("Assets/Samples"))                         AssetDatabase.CreateFolder("Assets", "Samples");
+            if (!AssetDatabase.IsValidFolder("Assets/Samples/NaiveUnity Pack"))         AssetDatabase.CreateFolder("Assets/Samples", "NaiveUnity Pack");
+            if (!AssetDatabase.IsValidFolder("Assets/Samples/NaiveUnity Pack/config"))  AssetDatabase.CreateFolder("Assets/Samples/NaiveUnity Pack", "config");
 
-                        AssetDatabase.CreateFolder("Assets/Samples", "NaiveUnity Pack");
-                    }
-                    AssetDatabase.CreateFolder("Assets/Samples/NaiveUnity Pack", "config");
-                }
+            if (AssetDatabase.FindAssets("Assets/Samples/NaiveUnity Pack/config/item group list.json") == null)
+            {
                 groupList.Add("none");
                 saveData();
             }
             else
                 loadData();
+
             groupIndex.Add(0);
         }
 
