@@ -10,9 +10,8 @@ namespace NaiveAPI
         public string itemName;
         public string displayName;
         public int stackLimit;
+        public string group; 
         public GameObject prefab;
-        [SerializeField]
-        public object customInfo;
     }
 }
 

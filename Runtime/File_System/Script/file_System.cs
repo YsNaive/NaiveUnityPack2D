@@ -25,9 +25,10 @@ namespace NaiveAPI
             else
             {
                 Debug.Log("DataFile Not Found , please Check your path");
-                return default(T);
+                return default;
             }
         }
+
         public static void LoadDataAsJson<T>(string dataPath ,T overWriteObject) where T : new()
         {
             if (File.Exists(dataPath))
