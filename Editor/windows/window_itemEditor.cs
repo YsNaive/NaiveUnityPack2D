@@ -51,7 +51,7 @@ namespace NaiveAPI
 
         private void OnEnable()
         {
-            if (AssetDatabase.FindAssets("Assets/Samples/NaiveUnity Pack/config/item group list.json") == null)
+            if (AssetDatabase.FindAssets("Assets/Samples/NaiveUnity Pack/config/item group list.json").Length == 0)
             {
                 if (!AssetDatabase.IsValidFolder("Assets/Samples/NaiveUnity Pack/config"))
                 {
