@@ -7,22 +7,21 @@ using UnityEngine;
 
 namespace NaiveAPI
 {
-    public class window_itemEditor : EditorWindow
+    public class window_itemEditor : item_windowAPI
     {
-        private enum page
+        public static window_itemEditor Instance { get; private set; }
+        public static bool IsOpen
         {
-            create,
-            editItem,
-            editGroup
+            get { return Instance != null; }
         }
-        private class itemEditorData
+        [MenuItem("Window/NaiveAPI/Item Editor")]
+        public static void ShowWindow()
         {
-            public page page;
-            public List<string> list;
+            GetWindow<window_itemEditor>("CustomInfo Editor");
         }
 
-        private page pageSelected = page.create;
-        private page lastPage = page.create;
+        private itemEditorPage pageSelected = itemEditorPage.create;
+        private itemEditorPage lastPage = itemEditorPage.create;
         private DefaultAsset targetFolder = null,iconFolder=null;
         private string targetFolderPath;
         private bool isLoadIconFromPrefab = false;
@@ -32,7 +31,13 @@ namespace NaiveAPI
         private List<int> groupIndex = new List<int>();
         private List<string> groupList = new List<string>();
         private Vector2 itemGroupScrollPosition = new Vector2(0,0);
-        
+        private Vector2 groupScrollPosition = new Vector2(0,0);
+        private Vector2 allScrollPosition = new Vector2(0,0);
+
+        private int dataListIndex = 0;
+        private List<itemCustomInfoData> dataList = new List<itemCustomInfoData>();
+        private List<string> dataListLayout = new List<string>();
+        UnityEngine.Object customInfoObject;
         // for image setting
         private int x = 0, y = 0, scale = 0;
         // itemType
@@ -43,46 +48,44 @@ namespace NaiveAPI
         [HideInInspector]
         private GameObject prefab;
 
-        [MenuItem("Window/NaiveAPI/Item Editor")]
-        public static void ShowObjectWindow()
-        {
-            GetWindow<window_itemEditor>(true, "Item Editor", true);
-        }
 
         private void OnEnable()
         {
-            if (!AssetDatabase.IsValidFolder("Assets/Samples"))                         AssetDatabase.CreateFolder("Assets", "Samples");
-            if (!AssetDatabase.IsValidFolder("Assets/Samples/NaiveUnity Pack"))         AssetDatabase.CreateFolder("Assets/Samples", "NaiveUnity Pack");
-            if (!AssetDatabase.IsValidFolder("Assets/Samples/NaiveUnity Pack/config"))  AssetDatabase.CreateFolder("Assets/Samples/NaiveUnity Pack", "config");
+            Instance = this;
+            minSize = new Vector2(300, 300);
+            dataPreset();
+            loadData();
+            if (groupIndex.Count == 0) groupIndex.Add(0);
+            
 
-            if (AssetDatabase.FindAssets("Assets/Samples/NaiveUnity Pack/config/item group list.json") == null)
-            {
-                groupList.Add("none");
-                saveData();
-            }
-            else
-                loadData();
+            reflushDataListLayout();
+        }
 
-            groupIndex.Add(0);
+        private void OnDestroy()
+        {
+            saveData();
         }
 
         private void OnGUI()
         {
-            if (pageSelected == page.create)
+            allScrollPosition = EditorGUILayout.BeginScrollView(allScrollPosition,GUILayout.Width(position.width),GUILayout.Height(position.height));
+
+
+            if (pageSelected == itemEditorPage.create)
             {
                 if (GUILayout.Button("Create Mode"))
                 {
-                    pageSelected = page.editItem;
-                    lastPage = page.editItem;
+                    pageSelected = itemEditorPage.editItem;
+                    lastPage = itemEditorPage.editItem;
                     saveData();
                 }
             }
-            else if(pageSelected == page.editItem)
+            else if(pageSelected == itemEditorPage.editItem)
             {
                 if (GUILayout.Button("Edit Mode"))
                 {
-                    pageSelected = page.create;
-                    lastPage = page.create;
+                    pageSelected = itemEditorPage.create;
+                    lastPage = itemEditorPage.create;
                     groupIndex.Clear();
                     groupIndex.Add(0);
                     saveData();
@@ -91,24 +94,25 @@ namespace NaiveAPI
 
             switch (pageSelected)
             {
-                case page.create:
+                case itemEditorPage.create:
                     {
                         targetItem = null;
                         targetFolder = (DefaultAsset)EditorGUILayout.ObjectField("Generate locate", targetFolder, typeof(DefaultAsset), false);
-                        targetFolderPath = AssetDatabase.GetAssetPath(targetFolder) + "/";
+                        targetFolderPath = AssetDatabase.GetAssetPath(targetFolder);
 
 
                         itemName = EditorGUILayout.TextField("Item Name", itemName);
                         displayName = EditorGUILayout.TextField("Display Name", displayName);
                         stackLimit = EditorGUILayout.IntField("Stack limit", stackLimit);
                         prefab = (GameObject)EditorGUILayout.ObjectField("GameObject (prefab)", prefab, typeof(GameObject), false);
-
-                        groupLayout();
+                        
 
                         if (!isLoadIconFromPrefab)
                         {
+                            groupLayout();
                             EditorGUILayout.BeginHorizontal();
-                            icon = (Texture2D)EditorGUILayout.ObjectField("Item icon ", icon, typeof(Texture2D), false);
+                            EditorGUILayout.LabelField("Item icon", GUILayout.Width(75));
+                            icon = (Texture2D)EditorGUILayout.ObjectField(icon, typeof(Texture2D), false);
                             if (GUILayout.Button("Load form\nPrefab"))
                             {
                                 isLoadIconFromPrefab = !isLoadIconFromPrefab;
@@ -153,14 +157,25 @@ namespace NaiveAPI
                             }
                         }
 
-                        EditorGUILayout.Space(20);
+                        EditorGUILayout.BeginHorizontal();
+                        EditorGUILayout.LabelField("Custom Infomation",GUILayout.Width(140));
+                        dataListIndex = EditorGUILayout.Popup(dataListIndex, dataListLayout.ToArray());
+                        EditorGUILayout.EndHorizontal();
+                        infoLayout();
+
+
+                        
+
                         if (!isLoadIconFromPrefab)
                         {
                             if (GUILayout.Button("Generate Item"))
                             {
                                 item_itemType item = CreateInstance<item_itemType>();
 
-                                AssetDatabase.CreateAsset(item, targetFolderPath + itemName + ".asset");
+                                AssetDatabase.CreateAsset(item, targetFolderPath +'/'+ itemName + ".asset");
+
+                                if (!AssetDatabase.IsValidFolder(targetFolderPath + "/CustomItemInfo")) AssetDatabase.CreateFolder(targetFolderPath, "CustomItemInfo");
+                                AssetDatabase.CreateAsset(customInfoObject, targetFolderPath+ "/CustomItemInfo/" + itemName + "_customInfo.asset");
                                 AssetDatabase.SaveAssets();
                                 serializedObject = new SerializedObject(item);
                                 serializedObject.FindProperty("itemName").stringValue = itemName;
@@ -176,20 +191,24 @@ namespace NaiveAPI
                                         temp += ',';
                                 }
                                 serializedObject.FindProperty("group").stringValue = temp;
+                                serializedObject.FindProperty("infomation").objectReferenceValue = customInfoObject;
+                                serializedObject.ApplyModifiedProperties();
+                                serializedObject = new SerializedObject(customInfoObject);
+                                serializedObject.FindProperty("relatedOn").objectReferenceValue = item;
                                 serializedObject.ApplyModifiedProperties();
 
+                                customInfoObject = null;
                                 itemName = null;
                                 displayName = null;
                                 stackLimit = 1;
                                 prefab = null;
                                 icon = null;
-
                             }
                         }
                         break;
                     }
                     
-                case page.editItem:
+                case itemEditorPage.editItem:
                     {
                         targetItem = (item_itemType)EditorGUILayout.ObjectField("Select Item", targetItem, typeof(item_itemType), false);
 
@@ -224,34 +243,32 @@ namespace NaiveAPI
                             serializedObject.FindProperty("group").stringValue = temp;
                             serializedObject.FindProperty("prefab").objectReferenceValue = (GameObject)EditorGUILayout.ObjectField("GameObject (prefab)", targetItem.prefab, typeof(GameObject), false);
                             serializedObject.FindProperty("icon").objectReferenceValue = (Texture2D)EditorGUILayout.ObjectField("Item icon ", targetItem.icon, typeof(Texture2D), false);
+
+                            if (targetItem.infomation != null)
+                            {
+                                SerializedObject customSerializedObject = new SerializedObject(targetItem.infomation);
+                                for (int i = 0; i < dataList.Count; i++)
+                                {
+                                    if (targetItem.infomation.GetType().ToString() == dataList[i].name) dataListIndex = i + 1;
+                                }
+                                foreach (itemCustomInfoData.valueData i in dataList[dataListIndex - 1].valueDatas)
+                                {
+                                    EditorGUILayout.PropertyField(customSerializedObject.FindProperty(i.name));
+                                }
+                                customSerializedObject.ApplyModifiedProperties();
+                                GUILayout.Space(10);
+                            }
+                            
+
                             serializedObject.ApplyModifiedProperties();
                         }
                         break;
                     }
 
-                case page.editGroup:
+                case itemEditorPage.editGroup:
                     {
                         EditorGUILayout.LabelField("Item Group");
-                        itemGroupScrollPosition = EditorGUILayout.BeginScrollView(itemGroupScrollPosition, GUILayout.Width(320), GUILayout.Height(300));
-                        for (int i = 0; i < groupList.Count; i++)
-                        {
-                            EditorGUILayout.BeginHorizontal();
-                            EditorGUILayout.LabelField(' '+(i + 1).ToString(), GUILayout.Width(20));
-                            groupList[i] = EditorGUILayout.TextField(groupList[i]);
-                            if (GUILayout.Button("Delete"))
-                            {
-                                groupList.RemoveAt(i);
-                            }
-                            EditorGUILayout.EndHorizontal();
-                        }
-                        EditorGUILayout.EndScrollView();
-                        GUILayout.Space(10);
-                        if (GUILayout.Button("Add new Group"))
-                        {
-                            groupList.Add("");
-                        }
-
-                        GUILayout.Space(20);
+                        stringListLayout(ref groupList, ref itemGroupScrollPosition,210);
 
                         // Save/Cancel edit & back to lastPage
                         EditorGUILayout.BeginHorizontal();
@@ -269,15 +286,18 @@ namespace NaiveAPI
                         break;
                     }
             }
+
+            EditorGUILayout.EndScrollView();
         }
         private void groupLayout()
         {
             GUILayout.Space(10);
+            groupScrollPosition = EditorGUILayout.BeginScrollView(groupScrollPosition, GUILayout.Width(position.width), GUILayout.Height(75));
             EditorGUILayout.BeginHorizontal();
             EditorGUILayout.LabelField("Group",GUILayout.Width(100));
             if (GUILayout.Button("edit"))
             {
-                pageSelected = page.editGroup;
+                pageSelected = itemEditorPage.editGroup;
             }
             if (GUILayout.Button("add"))
             {
@@ -288,7 +308,8 @@ namespace NaiveAPI
             for (int i = 0; i < groupIndex.Count; i++)
             {
                 EditorGUILayout.BeginHorizontal();
-                GUILayout.Label("", GUILayout.Width(100));
+                GUILayout.Label("", GUILayout.Width(70));
+                GUILayout.Label((i+1).ToString(), GUILayout.Width(15));
                 groupIndex[i] = EditorGUILayout.Popup(groupIndex[i], groupList.ToArray());
                 if (GUILayout.Button("Delete"))
                 {
@@ -297,13 +318,15 @@ namespace NaiveAPI
                 EditorGUILayout.EndHorizontal();
             }
             GUILayout.Space(10);
+            EditorGUILayout.EndScrollView();
         }
-
         private void saveData()
         {
             itemEditorData saveList = new itemEditorData
             {
                 page = pageSelected,
+                itemFolder = targetFolder,
+                prefabFolder = iconFolder,
                 list = groupList
             };
             file_System.SaveDataAsJson(saveList, "Assets/Samples/NaiveUnity Pack/config/", "item group list.json");
@@ -311,11 +334,39 @@ namespace NaiveAPI
         private void loadData()
         {
             itemEditorData itemEditorData = new itemEditorData();
-            file_System.LoadDataAsJson<itemEditorData>("Assets/Samples/NaiveUnity Pack/config/item group list.json", itemEditorData);
+            file_System.LoadDataAsJson("Assets/Samples/NaiveUnity Pack/config/item group list.json", itemEditorData);
             pageSelected = itemEditorData.page;
             groupList = itemEditorData.list;
-        }
+            targetFolder = itemEditorData.itemFolder;
+            iconFolder = itemEditorData.prefabFolder;
 
+
+            saveList<itemCustomInfoData> saveList = new saveList<itemCustomInfoData>();
+            file_System.LoadDataAsJson(dataPath.customInfoList, saveList);
+            dataList = saveList.list;
+        }
+        public void infoLayout()
+        {
+            if (dataListIndex != 0)
+            {
+                if (customInfoObject == null) customInfoObject = CreateInstance(dataListLayout[dataListIndex]);
+                if (dataListLayout[dataListIndex] != customInfoObject.GetType().ToString())
+                {
+                    customInfoObject = CreateInstance(dataListLayout[dataListIndex]);
+                }
+            }
+
+            if (dataListLayout[dataListIndex] != "null")
+            {
+                SerializedObject serializedObject = new SerializedObject(customInfoObject);
+                foreach (itemCustomInfoData.valueData i in dataList[dataListIndex-1].valueDatas)
+                {
+                    EditorGUILayout.PropertyField(serializedObject.FindProperty(i.name));
+                }
+                serializedObject.ApplyModifiedProperties();
+                GUILayout.Space(10);
+            }
+        }
         // Sprite to Texture
         public static Texture2D Sprite2Texture(Sprite sprite,int x,int y,int scale)
         {
@@ -326,6 +377,15 @@ namespace NaiveAPI
             newText.Apply();
             return newText;
         }
-    }
 
+        public void reflushDataListLayout()
+        {
+            dataListLayout.Clear();
+            dataListLayout.Add("null");
+            foreach (itemCustomInfoData i in dataList)
+            {
+                dataListLayout.Add(i.name);
+            }
+        }
+    }
 }

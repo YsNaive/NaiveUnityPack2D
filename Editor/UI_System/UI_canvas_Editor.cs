@@ -25,19 +25,16 @@ namespace NaiveAPI
 		{
 			base.OnInspectorGUI();
 			serializedObject.Update();
-
+			
 			GUILayout.Space(10);
 			EditorGUILayout.PropertyField(buttonType, new GUIContent("Object Type"));
 			UI_canvas.objectName = EditorGUILayout.TextField("Object Name", UI_canvas.objectName);
 			
 			UI_canvas.isCloseClickOutside = EditorGUILayout.Toggle("Close when click outside", UI_canvas.isCloseClickOutside);
 
-			if (GUI.changed)
-			{
-				EditorUtility.SetDirty(target);
-			}
+			
 
-			serializedObject.ApplyModifiedProperties();
+			
 
 			// «ö¶s
 			if (GUILayout.Button("Generate Object"))
@@ -60,8 +57,11 @@ namespace NaiveAPI
 						break;
 				}
 			}
-
-
+			if (GUI.changed)
+			{
+				EditorUtility.SetDirty(target);
+			}
+			serializedObject.ApplyModifiedProperties();
 		}
 	}
 

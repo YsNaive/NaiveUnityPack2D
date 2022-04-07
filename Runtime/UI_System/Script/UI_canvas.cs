@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 namespace NaiveAPI
 {
-    public enum objectType
+    public enum UI_objectType
     {
         objectButton,
         customButton,
@@ -17,7 +17,7 @@ namespace NaiveAPI
     public class UI_canvas : NaiveAPI2D
     {
         [HideInInspector]
-        public objectType buttonType = objectType.objectButton;
+        public UI_objectType buttonType = UI_objectType.objectButton;
         [HideInInspector]
         public string objectName ;
         [HideInInspector]

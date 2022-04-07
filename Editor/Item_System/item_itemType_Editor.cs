@@ -16,12 +16,27 @@ namespace NaiveAPI
                 return this.target as item_itemType;
             }
         }
+        Hashtable temp = new Hashtable();
+        private void OnEnable()
+        {
+            temp.Add("test", 5);
+        }
+        public override void OnInspectorGUI()
+        {
+            
+            base.OnInspectorGUI();
+            serializedObject.Update();
 
+            
 
+            if (GUI.changed)
+            {
+                EditorUtility.SetDirty(target);
+            }
+            serializedObject.ApplyModifiedProperties();
+        }
         public override Texture2D RenderStaticPreview(string assetPath, UnityEngine.Object[] subAssets, int width, int height)
         {
-
-
             Texture2D newIcon = new Texture2D(width, height);
 
 
@@ -69,8 +84,6 @@ namespace NaiveAPI
 
             }
         }
-
-
         public static class AssetDatabaseUtility
         {
 

@@ -1,3 +1,5 @@
+using System;
+using UnityEditor;
 using UnityEngine;
 
 namespace NaiveAPI
@@ -12,7 +14,7 @@ namespace NaiveAPI
         public int stackLimit;
         public string group; 
         public GameObject prefab;
+
+        public UnityEngine.Object infomation;
     }
 }
-
-

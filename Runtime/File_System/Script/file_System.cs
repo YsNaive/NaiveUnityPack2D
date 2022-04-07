@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.IO;
+using System.Collections.Generic;
 
 namespace NaiveAPI
 {
@@ -7,10 +8,16 @@ namespace NaiveAPI
     {
         public static void SaveDataAsJson<T>(T saveObject, string directory, string fileName) where T : new()
         {
+            if (directory[directory.Length - 1] != '/') directory += '/';
             if (!Directory.Exists(directory))
                 Directory.CreateDirectory(directory);
-
-            string jsonData = JsonUtility.ToJson(saveObject);
+            string jsonData;
+            if (saveObject.GetType().ToString().Contains("List"))
+            {
+                jsonData = JsonUtility.ToJson(saveObject);
+            }
+            else
+                jsonData = JsonUtility.ToJson(saveObject);
             File.WriteAllText(directory + fileName, jsonData);
         }
 
@@ -40,7 +47,6 @@ namespace NaiveAPI
             {
                 Debug.Log("DataFile Not Found , please Check your path");
             }
-
         }
     }
 }
