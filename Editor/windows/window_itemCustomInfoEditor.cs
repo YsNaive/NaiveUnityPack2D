@@ -200,8 +200,9 @@ namespace NaiveAPI
             public static string one { get { return "using UnityEditor;\nusing UnityEngine;\n[CreateAssetMenu(menuName = \"NaiveAPI/Item System/Custom Infomation/"; } }
             public static string two { get { return "\")]\npublic class "; } }
             public static string three { get { return " : ScriptableObject\n{\n"; } }
-            public static string four { get { return "    public Object relatedOn;\n    private void OnEnable()\n    {\n        if (relatedOn == null && AssetDatabase.GetAssetPath(this) != \"\")\n        {\n            AssetDatabase.DeleteAsset(AssetDatabase.GetAssetPath(this));\n            AssetDatabase.Refresh();\n        }\n    }\n}"; } }
+            public static string four { get { return "}"; } }
+            //public static string four { get { return "    public Object relatedOn;\n    private void OnValidate()\n    {\n        if (relatedOn == null && AssetDatabase.GetAssetPath(this) != \"\")\n        {\n            AssetDatabase.DeleteAsset(AssetDatabase.GetAssetPath(this));\n            AssetDatabase.Refresh();\n        }\n    }\n}"; } }
         }
-        
+
     }
 }

@@ -172,10 +172,11 @@ namespace NaiveAPI
                             {
                                 item_itemType item = CreateInstance<item_itemType>();
 
+
                                 AssetDatabase.CreateAsset(item, targetFolderPath +'/'+ itemName + ".asset");
 
                                 if (!AssetDatabase.IsValidFolder(targetFolderPath + "/CustomItemInfo")) AssetDatabase.CreateFolder(targetFolderPath, "CustomItemInfo");
-                                AssetDatabase.CreateAsset(customInfoObject, targetFolderPath+ "/CustomItemInfo/" + itemName + "_customInfo.asset");
+                                
                                 AssetDatabase.SaveAssets();
                                 serializedObject = new SerializedObject(item);
                                 serializedObject.FindProperty("itemName").stringValue = itemName;
@@ -191,11 +192,19 @@ namespace NaiveAPI
                                         temp += ',';
                                 }
                                 serializedObject.FindProperty("group").stringValue = temp;
-                                serializedObject.FindProperty("infomation").objectReferenceValue = customInfoObject;
                                 serializedObject.ApplyModifiedProperties();
-                                serializedObject = new SerializedObject(customInfoObject);
-                                serializedObject.FindProperty("relatedOn").objectReferenceValue = item;
-                                serializedObject.ApplyModifiedProperties();
+
+                                if (dataListIndex != 0)
+                                {
+                                    AssetDatabase.CreateAsset(customInfoObject, targetFolderPath + "/CustomItemInfo/" + itemName + "_customInfo.asset");
+                                    serializedObject.FindProperty("infomation").objectReferenceValue = customInfoObject;
+                                    serializedObject.ApplyModifiedProperties();
+                                    serializedObject = new SerializedObject(customInfoObject);
+                                    //serializedObject.FindProperty("relatedOn").objectReferenceValue = item;
+                                    serializedObject.ApplyModifiedProperties();
+
+                                    customInfoObject = new UnityEngine.Object();
+                                }
 
                                 customInfoObject = null;
                                 itemName = null;

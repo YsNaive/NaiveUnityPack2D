@@ -15,6 +15,13 @@ namespace NaiveAPI
         public string group; 
         public GameObject prefab;
 
+        [HideInInspector]
         public UnityEngine.Object infomation;
+
+        public T getInfomation<T>()
+        {
+            T output = (T)(object)infomation;
+            return output;
+        }
     }
 }

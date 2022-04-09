@@ -9,6 +9,8 @@ namespace NaiveAPI
     [CustomEditor(typeof(item_itemType))]
     public class item_itemType_Editor : Editor
     {
+        private List<item_windowAPI.itemCustomInfoData> dataList = new List<item_windowAPI.itemCustomInfoData>();
+        private int dataListIndex = 0;
         public item_itemType Target
         {
             get
@@ -16,18 +18,26 @@ namespace NaiveAPI
                 return this.target as item_itemType;
             }
         }
-        Hashtable temp = new Hashtable();
         private void OnEnable()
         {
-            temp.Add("test", 5);
+            loadData();
+            if (Target.infomation != null)
+            {
+                for (int i = 0; i < dataList.Count; i++)
+                {
+                    if (Target.infomation.GetType().ToString() == dataList[i].name)
+                        dataListIndex = i + 1;
+                }
+            }
         }
         public override void OnInspectorGUI()
         {
-            
+
             base.OnInspectorGUI();
+            infoLayout();
             serializedObject.Update();
 
-            
+
 
             if (GUI.changed)
             {
@@ -96,6 +106,28 @@ namespace NaiveAPI
 
 
             }
+        }
+
+        private void infoLayout()
+        {
+            GUILayout.Space(15);
+            if (dataListIndex != 0)
+            {
+                GUILayout.Label("[ " + dataList[dataListIndex-1].name + " ]");
+                SerializedObject serializedObject = new SerializedObject(Target.getInfomation<UnityEngine.Object>());
+                foreach (item_windowAPI.itemCustomInfoData.valueData i in dataList[dataListIndex - 1].valueDatas)
+                {
+                    EditorGUILayout.PropertyField(serializedObject.FindProperty(i.name));
+                }
+                serializedObject.ApplyModifiedProperties();
+                GUILayout.Space(10);
+            }
+        }
+        private void loadData()
+        {
+            item_windowAPI.saveList<item_windowAPI.itemCustomInfoData> saveList = new item_windowAPI.saveList<item_windowAPI.itemCustomInfoData>();
+            file_System.LoadDataAsJson(item_windowAPI.dataPath.customInfoList, saveList);
+            dataList = saveList.list;
         }
 
     }
