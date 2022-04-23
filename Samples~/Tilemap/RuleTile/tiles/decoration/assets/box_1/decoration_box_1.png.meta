@@ -1,151 +1,151 @@
 fileFormatVersion: 2
-guid: e05dbf9bc3c29ae47ad2dca3bb112685
+guid: d4c7f2e84dbfa7d4baf0d74dbda178ad
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3334097751830526916
-    second: floor_sidewalk_1_0
+      213: 5481029819749629309
+    second: decoration_box_1_0
   - first:
-      213: 4890720048566860650
-    second: floor_sidewalk_1_1
+      213: -939888771874392512
+    second: decoration_box_1_1
   - first:
-      213: -47428960873882743
-    second: floor_sidewalk_1_2
+      213: -5357921774088716915
+    second: decoration_box_1_2
   - first:
-      213: 9201523081512966724
-    second: floor_sidewalk_1_3
+      213: 388288639487337702
+    second: decoration_box_1_3
   - first:
-      213: -4096033520795788241
-    second: floor_sidewalk_1_4
+      213: 7861524043263706577
+    second: decoration_box_1_4
   - first:
-      213: -8986319488174847326
-    second: floor_sidewalk_1_8
+      213: -107381654235078805
+    second: decoration_box_1_5
   - first:
-      213: 2525063461226542945
-    second: floor_sidewalk_1_9
+      213: 5065882823554174693
+    second: decoration_box_1_6
   - first:
-      213: -5974547133217616327
-    second: floor_sidewalk_1_10
+      213: 5397725144750287567
+    second: decoration_box_1_7
   - first:
-      213: 5624916299786837001
-    second: floor_sidewalk_1_11
+      213: 6756264664601378196
+    second: decoration_box_1_8
   - first:
-      213: 5586903861853076397
-    second: floor_sidewalk_1_12
+      213: 8167749000636156037
+    second: decoration_box_1_9
   - first:
-      213: -6503723191519887354
-    second: floor_sidewalk_1_16
+      213: 5469035034995300971
+    second: decoration_box_1_10
   - first:
-      213: 2665834747779807882
-    second: floor_sidewalk_1_17
+      213: -6288158945748038032
+    second: decoration_box_1_11
   - first:
-      213: -2556921762471485225
-    second: floor_sidewalk_1_18
+      213: 7127800359253988333
+    second: decoration_box_1_12
   - first:
-      213: 4223585207458908402
-    second: floor_sidewalk_1_19
+      213: -777419469230995769
+    second: decoration_box_1_13
   - first:
-      213: 1931457818498594362
-    second: floor_sidewalk_1_20
+      213: -5438194980330302643
+    second: decoration_box_1_14
   - first:
-      213: 7438231084525171223
-    second: floor_sidewalk_1_21
+      213: -2668558131281091727
+    second: decoration_box_1_15
   - first:
-      213: 6422454423392309704
-    second: floor_sidewalk_1_24
+      213: 2324024718050069927
+    second: decoration_box_1_16
   - first:
-      213: -8841261296262191932
-    second: floor_sidewalk_1_25
+      213: -3512618847791692227
+    second: decoration_box_1_17
   - first:
-      213: -2564803521354003413
-    second: floor_sidewalk_1_26
+      213: -5431246178793041466
+    second: decoration_box_1_18
   - first:
-      213: -3718762895447565184
-    second: floor_sidewalk_1_27
+      213: 9056068110087940064
+    second: decoration_box_1_19
   - first:
-      213: -2234934189321014123
-    second: floor_sidewalk_1_28
+      213: -9218172122820444360
+    second: decoration_box_1_20
   - first:
-      213: 670994934122033494
-    second: floor_sidewalk_1_29
+      213: -4091800644806855618
+    second: decoration_box_1_21
   - first:
-      213: 3047625808342097687
-    second: floor_sidewalk_1_30
+      213: -1378538621078465942
+    second: decoration_box_1_22
   - first:
-      213: 3431599761122730690
-    second: floor_sidewalk_1_31
+      213: 82975119728648795
+    second: decoration_box_1_23
   - first:
-      213: -3529841977058960381
-    second: floor_sidewalk_1_32
+      213: -9048706484147725650
+    second: decoration_box_1_24
   - first:
-      213: -3679947177896002319
-    second: floor_sidewalk_1_33
+      213: -3350810732866131064
+    second: decoration_box_1_25
   - first:
-      213: -4215769220977419366
-    second: floor_sidewalk_1_34
+      213: 6192181426388186468
+    second: decoration_box_1_26
   - first:
-      213: 8235597244562227541
-    second: floor_sidewalk_1_35
+      213: -7298782264686134423
+    second: decoration_box_1_27
   - first:
-      213: 3505547066015472266
-    second: floor_sidewalk_1_36
+      213: 6413250381491785041
+    second: decoration_box_1_28
   - first:
-      213: 3703346402825455107
-    second: floor_sidewalk_1_37
+      213: 510960996808229675
+    second: decoration_box_1_29
   - first:
-      213: 5131671364912004205
-    second: floor_sidewalk_1_38
+      213: 6507585705566390367
+    second: decoration_box_1_30
   - first:
-      213: -530309328102297541
-    second: floor_sidewalk_1_39
+      213: -7638709071373725911
+    second: decoration_box_1_31
   - first:
-      213: 5745488569448625252
-    second: floor_sidewalk_1_40
+      213: 3207996678870594212
+    second: decoration_box_1_32
   - first:
-      213: -2507525726146246734
-    second: floor_sidewalk_1_41
+      213: 8264258058738022453
+    second: decoration_box_1_33
   - first:
-      213: -5612535315324660592
-    second: floor_sidewalk_1_42
+      213: -8888744965524926614
+    second: decoration_box_1_34
   - first:
-      213: -1014107279122056166
-    second: floor_sidewalk_1_43
+      213: 7139508480334101330
+    second: decoration_box_1_35
   - first:
-      213: 1511603554757899926
-    second: floor_sidewalk_1_44
+      213: 8994183298862571508
+    second: decoration_box_1_36
   - first:
-      213: 3976646977369690310
-    second: floor_sidewalk_1_45
+      213: 958533329940153912
+    second: decoration_box_1_37
   - first:
-      213: 7984195980138879377
-    second: floor_sidewalk_1_46
+      213: 8856763453368194537
+    second: decoration_box_1_38
   - first:
-      213: -360541259029898128
-    second: floor_sidewalk_1_47
+      213: -888346352079745956
+    second: decoration_box_1_39
   - first:
-      213: 5416924008087225978
-    second: floor_sidewalk_1_48
+      213: 1250185917185241082
+    second: decoration_box_1_40
   - first:
-      213: 1090956636090513848
-    second: floor_sidewalk_1_49
+      213: -2106700579442621955
+    second: decoration_box_1_41
   - first:
-      213: -2434999934566221190
-    second: floor_sidewalk_1_50
+      213: 6948478928788133099
+    second: decoration_box_1_42
   - first:
-      213: -8235712756789532261
-    second: floor_sidewalk_1_51
+      213: 8764783020200443456
+    second: decoration_box_1_43
   - first:
-      213: 8388383234532578960
-    second: floor_sidewalk_1_52
+      213: -8747386530851745955
+    second: decoration_box_1_44
   - first:
-      213: -8940901554870084680
-    second: floor_sidewalk_1_53
+      213: -314785910175012859
+    second: decoration_box_1_45
   - first:
-      213: 2767105697930254848
-    second: floor_sidewalk_1_54
+      213: 4762906544956554767
+    second: decoration_box_1_46
   - first:
-      213: 8469854060140709619
-    second: floor_sidewalk_1_55
+      213: 5410817764669869661
+    second: decoration_box_1_47
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -209,7 +209,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -221,7 +221,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -233,7 +233,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -245,7 +245,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -259,511 +259,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: floor_sidewalk_1_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1536
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4cb79409d38154e20800000000000000
-      internalID: 3334097751830526916
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: floor_sidewalk_1_1
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 1536
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6b75b6d8f35fd340800000000000000
-      internalID: 4890720048566860650
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: floor_sidewalk_1_2
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 1536
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 98bdb038c9f775ff0800000000000000
-      internalID: -47428960873882743
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: floor_sidewalk_1_3
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 1536
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 44a532aad7062bf70800000000000000
-      internalID: 9201523081512966724
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: floor_sidewalk_1_4
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 1536
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f2cdfdce637f727c0800000000000000
-      internalID: -4096033520795788241
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: floor_sidewalk_1_8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1280
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2aa0b2d790e2a4380800000000000000
-      internalID: -8986319488174847326
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: floor_sidewalk_1_9
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 1280
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 167f9b1f6d3da0320800000000000000
-      internalID: 2525063461226542945
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: floor_sidewalk_1_10
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 1280
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93e4cbe6905261da0800000000000000
-      internalID: -5974547133217616327
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: floor_sidewalk_1_11
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 1280
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 90c59149297bf0e40800000000000000
-      internalID: 5624916299786837001
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: floor_sidewalk_1_12
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 1280
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dabb200367ba88d40800000000000000
-      internalID: 5586903861853076397
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: floor_sidewalk_1_16
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1024
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 600ccfb27322eb5a0800000000000000
-      internalID: -6503723191519887354
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: floor_sidewalk_1_17
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 1024
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a8afe433492fef420800000000000000
-      internalID: 2665834747779807882
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: floor_sidewalk_1_18
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 1024
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d0eb65443df38cd0800000000000000
-      internalID: -2556921762471485225
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: floor_sidewalk_1_19
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 1024
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f8ce216e503d9a30800000000000000
-      internalID: 4223585207458908402
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: floor_sidewalk_1_20
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 1024
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a36724217aaedca10800000000000000
-      internalID: 1931457818498594362
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: floor_sidewalk_1_21
-      rect:
-        serializedVersion: 2
-        x: 1280
-        y: 1024
-        width: 768
-        height: 768
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 712346e03c7e93760800000000000000
-      internalID: 7438231084525171223
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: floor_sidewalk_1_24
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 768
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8c15f6c3544212950800000000000000
-      internalID: 6422454423392309704
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: floor_sidewalk_1_25
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 768
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4c4e1eda1b78d4580800000000000000
-      internalID: -8841261296262191932
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: floor_sidewalk_1_26
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 768
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b2c060749ccf76cd0800000000000000
-      internalID: -2564803521354003413
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: floor_sidewalk_1_27
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 768
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 08cd1f479dc446cc0800000000000000
-      internalID: -3718762895447565184
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: floor_sidewalk_1_28
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 768
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 594352d223bebf0e0800000000000000
-      internalID: -2234934189321014123
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: floor_sidewalk_1_29
-      rect:
-        serializedVersion: 2
-        x: 1280
-        y: 768
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6513e66665adf4900800000000000000
-      internalID: 670994934122033494
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: floor_sidewalk_1_30
-      rect:
-        serializedVersion: 2
-        x: 1536
-        y: 768
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 71f1b8296875b4a20800000000000000
-      internalID: 3047625808342097687
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: floor_sidewalk_1_31
-      rect:
-        serializedVersion: 2
-        x: 1792
-        y: 768
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c229052dcd7f9f20800000000000000
-      internalID: 3431599761122730690
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: floor_sidewalk_1_32
+      name: decoration_box_1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -771,20 +267,20 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30c532c7c6b730fc0800000000000000
-      internalID: -3529841977058960381
+      spriteID: d7dff71d497801c40800000000000000
+      internalID: 5481029819749629309
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_sidewalk_1_33
+      name: decoration_box_1_1
       rect:
         serializedVersion: 2
         x: 256
@@ -792,20 +288,20 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fcbe45f9833eecc0800000000000000
-      internalID: -3679947177896002319
+      spriteID: 0467c084428d4f2f0800000000000000
+      internalID: -939888771874392512
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_sidewalk_1_34
+      name: decoration_box_1_2
       rect:
         serializedVersion: 2
         x: 512
@@ -813,20 +309,20 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9b9d98ca349e75c0800000000000000
-      internalID: -4215769220977419366
+      spriteID: d8d7c11b886d4a5b0800000000000000
+      internalID: -5357921774088716915
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_sidewalk_1_35
+      name: decoration_box_1_3
       rect:
         serializedVersion: 2
         x: 768
@@ -834,20 +330,20 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55141535f08ba4270800000000000000
-      internalID: 8235597244562227541
+      spriteID: 6e466fad57a736500800000000000000
+      internalID: 388288639487337702
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_sidewalk_1_36
+      name: decoration_box_1_4
       rect:
         serializedVersion: 2
         x: 1024
@@ -855,20 +351,20 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8ad34dbb7436a030800000000000000
-      internalID: 3505547066015472266
+      spriteID: 1d50de7177eb91d60800000000000000
+      internalID: 7861524043263706577
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_sidewalk_1_37
+      name: decoration_box_1_5
       rect:
         serializedVersion: 2
         x: 1280
@@ -876,20 +372,20 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 306c1a4aeede46330800000000000000
-      internalID: 3703346402825455107
+      spriteID: b6f9ce354f0828ef0800000000000000
+      internalID: -107381654235078805
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_sidewalk_1_38
+      name: decoration_box_1_6
       rect:
         serializedVersion: 2
         x: 1536
@@ -897,20 +393,20 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6cbf99eaeb573740800000000000000
-      internalID: 5131671364912004205
+      spriteID: 5ee03bb7691ad4640800000000000000
+      internalID: 5065882823554174693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_sidewalk_1_39
+      name: decoration_box_1_7
       rect:
         serializedVersion: 2
         x: 1792
@@ -918,20 +414,188 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b30f26dc976f3a8f0800000000000000
-      internalID: -530309328102297541
+      spriteID: fcae808bb6298ea40800000000000000
+      internalID: 5397725144750287567
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_sidewalk_1_40
+      name: decoration_box_1_8
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49db61e8ae213cd50800000000000000
+      internalID: 6756264664601378196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_box_1_9
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5884875017ca95170800000000000000
+      internalID: 8167749000636156037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_box_1_10
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6a9f0d536ae5eb40800000000000000
+      internalID: 5469035034995300971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_box_1_11
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07e4e7341c8fbb8a0800000000000000
+      internalID: -6288158945748038032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_box_1_12
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de35c3b79a80be260800000000000000
+      internalID: 7127800359253988333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_box_1_13
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c683079c1d0635f0800000000000000
+      internalID: -777419469230995769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_box_1_14
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d43991a6a76a784b0800000000000000
+      internalID: -5438194980330302643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_box_1_15
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 173a28aa48067fad0800000000000000
+      internalID: -2668558131281091727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_box_1_16
       rect:
         serializedVersion: 2
         x: 0
@@ -939,20 +603,20 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4647d0bb9631cbf40800000000000000
-      internalID: 5745488569448625252
+      spriteID: 7ad0a98fa28904020800000000000000
+      internalID: 2324024718050069927
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_sidewalk_1_41
+      name: decoration_box_1_17
       rect:
         serializedVersion: 2
         x: 256
@@ -960,20 +624,20 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b746e333aa733dd0800000000000000
-      internalID: -2507525726146246734
+      spriteID: d36c802c4cba04fc0800000000000000
+      internalID: -3512618847791692227
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_sidewalk_1_42
+      name: decoration_box_1_18
       rect:
         serializedVersion: 2
         x: 512
@@ -981,20 +645,20 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0941db00ed44c12b0800000000000000
-      internalID: -5612535315324660592
+      spriteID: 6c1d759506650a4b0800000000000000
+      internalID: -5431246178793041466
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_sidewalk_1_43
+      name: decoration_box_1_19
       rect:
         serializedVersion: 2
         x: 768
@@ -1002,20 +666,20 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1cbac77dca2de1f0800000000000000
-      internalID: -1014107279122056166
+      spriteID: 0e7e88b07fd9dad70800000000000000
+      internalID: 9056068110087940064
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_sidewalk_1_44
+      name: decoration_box_1_20
       rect:
         serializedVersion: 2
         x: 1024
@@ -1023,20 +687,20 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 696ff8a9c6b4af410800000000000000
-      internalID: 1511603554757899926
+      spriteID: 83ff0e45b49721080800000000000000
+      internalID: -9218172122820444360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_sidewalk_1_45
+      name: decoration_box_1_21
       rect:
         serializedVersion: 2
         x: 1280
@@ -1044,20 +708,20 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c050435b53ef2730800000000000000
-      internalID: 3976646977369690310
+      spriteID: e34b29a2ef00737c0800000000000000
+      internalID: -4091800644806855618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_sidewalk_1_46
+      name: decoration_box_1_22
       rect:
         serializedVersion: 2
         x: 1536
@@ -1065,20 +729,20 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 199974d11ff8dce60800000000000000
-      internalID: 7984195980138879377
+      spriteID: a62167d8d627edce0800000000000000
+      internalID: -1378538621078465942
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_sidewalk_1_47
+      name: decoration_box_1_23
       rect:
         serializedVersion: 2
         x: 1792
@@ -1086,20 +750,188 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07c96a892a91ffaf0800000000000000
-      internalID: -360541259029898128
+      spriteID: b522f988e69c62100800000000000000
+      internalID: 82975119728648795
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_sidewalk_1_48
+      name: decoration_box_1_24
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaad99f05698c6280800000000000000
+      internalID: -9048706484147725650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_box_1_25
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88ba2fd44678f71d0800000000000000
+      internalID: -3350810732866131064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_box_1_26
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 465b3a0233c0fe550800000000000000
+      internalID: 6192181426388186468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_box_1_27
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b367c633485ba90800000000000000
+      internalID: -7298782264686134423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_box_1_28
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15dc47c3e31700950800000000000000
+      internalID: 6413250381491785041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_box_1_29
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2385d4c15c471700800000000000000
+      internalID: 510960996808229675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_box_1_30
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f58c1b578b69f4a50800000000000000
+      internalID: 6507585705566390367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_box_1_31
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92f073a329addf590800000000000000
+      internalID: -7638709071373725911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_box_1_32
       rect:
         serializedVersion: 2
         x: 0
@@ -1107,20 +939,20 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a76035d6fa7cc2b40800000000000000
-      internalID: 5416924008087225978
+      spriteID: 4a2f6b49bf7158c20800000000000000
+      internalID: 3207996678870594212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_sidewalk_1_49
+      name: decoration_box_1_33
       rect:
         serializedVersion: 2
         x: 256
@@ -1128,20 +960,20 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b9b787c74bd32f00800000000000000
-      internalID: 1090956636090513848
+      spriteID: 5383d332bea80b270800000000000000
+      internalID: 8264258058738022453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_sidewalk_1_50
+      name: decoration_box_1_34
       rect:
         serializedVersion: 2
         x: 512
@@ -1149,20 +981,20 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7ab410f574253ed0800000000000000
-      internalID: -2434999934566221190
+      spriteID: a6f48d66c85d4a480800000000000000
+      internalID: -8888744965524926614
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_sidewalk_1_51
+      name: decoration_box_1_35
       rect:
         serializedVersion: 2
         x: 768
@@ -1170,20 +1002,20 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b992863e1eed4bd80800000000000000
-      internalID: -8235712756789532261
+      spriteID: 25bf339d221a41360800000000000000
+      internalID: 7139508480334101330
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_sidewalk_1_52
+      name: decoration_box_1_36
       rect:
         serializedVersion: 2
         x: 1024
@@ -1191,20 +1023,20 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0961826bb16896470800000000000000
-      internalID: 8388383234532578960
+      spriteID: 4ff547d9e02c1dc70800000000000000
+      internalID: 8994183298862571508
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_sidewalk_1_53
+      name: decoration_box_1_37
       rect:
         serializedVersion: 2
         x: 1280
@@ -1212,20 +1044,20 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8bb1b3228698be380800000000000000
-      internalID: -8940901554870084680
+      spriteID: 836847c2cf46d4d00800000000000000
+      internalID: 958533329940153912
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_sidewalk_1_54
+      name: decoration_box_1_38
       rect:
         serializedVersion: 2
         x: 1536
@@ -1233,20 +1065,20 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00a9715b8fbb66620800000000000000
-      internalID: 2767105697930254848
+      spriteID: 9e55ca98f6b89ea70800000000000000
+      internalID: 8856763453368194537
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: floor_sidewalk_1_55
+      name: decoration_box_1_39
       rect:
         serializedVersion: 2
         x: 1792
@@ -1254,14 +1086,182 @@ TextureImporter:
         width: 256
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f6461a7467fa8570800000000000000
-      internalID: 8469854060140709619
+      spriteID: c5cc5ce03b5fba3f0800000000000000
+      internalID: -888346352079745956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_box_1_40
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: affa509c77d895110800000000000000
+      internalID: 1250185917185241082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_box_1_41
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df1863a1cfe73c2e0800000000000000
+      internalID: -2106700579442621955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_box_1_42
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be414b765c4fd6060800000000000000
+      internalID: 6948478928788133099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_box_1_43
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e3c6418b3c2a970800000000000000
+      internalID: 8764783020200443456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_box_1_44
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5f8b8bbb4a0b9680800000000000000
+      internalID: -8747386530851745955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_box_1_45
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50868bbe1e7a1abf0800000000000000
+      internalID: -314785910175012859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_box_1_46
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0eb486844e391240800000000000000
+      internalID: 4762906544956554767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoration_box_1_47
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e4587d616171b40800000000000000
+      internalID: 5410817764669869661
       vertices: []
       indices: 
       edges: []
@@ -1275,9 +1275,7 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-    secondaryTextures:
-    - texture: {fileID: 2800000, guid: 1bbde4b9a5488b543a974ef2f77029e9, type: 3}
-      name: _NormalMap
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
